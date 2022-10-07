@@ -84,10 +84,35 @@
     border-radius: 10px;
     background-color: transparent;
 
-}
-
-.contact-btn:hover,
-.contact-btn:focus {
+&:hover,
+&:focus {
     background-color: #F8D24E;
     cursor: pointer;
+}
+}
+
+@media screen and (max-width: 767px){
+    .contact-card{
+    width: 280px;
+    }
+    .contact-cards {
+    display: block;
+    gap: 32px;
+    margin-bottom: 64px;
+}
+    
+}
+
+@media screen and (min-width: 768px) {
+    .contact-card {
+        width: 368px;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .contact-card {
+        width: 368px;
+    }
+
 }
