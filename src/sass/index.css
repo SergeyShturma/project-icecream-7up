@@ -156,9 +156,7 @@ button {
   border-radius: 10px;
   background-color: transparent;
 }
-
-.contact-btn:hover,
-.contact-btn:focus {
+.contact-btn:hover, .contact-btn:focus {
   background-color: #F8D24E;
   cursor: pointer;
 }
