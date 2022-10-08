@@ -9,6 +9,7 @@ p {
 }
 
 ul {
+  list-style: none;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -37,6 +38,13 @@ button {
   border-radius: 10px;
 }
 
+.container {
+  width: 1200px;
+  padding: 0 16px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .contact-cards {
   display: flex;
   gap: 32px;
@@ -47,6 +55,7 @@ button {
   outline: solid 2px tomato;
   padding: 40px;
   width: 368px;
+  font-style: normal;
   background: #FFFFFF;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
@@ -109,6 +118,12 @@ button {
   color: #131313;
 }
 
+.contact-tel,
+.contact-mail {
+  color: #131313;
+  text-decoration: none;
+}
+
 .contact-btns {
   display: flex;
   justify-content: center;
@@ -127,4 +142,18 @@ button {
 .contact-btn:focus {
   background-color: #F8D24E;
   cursor: pointer;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
 }/*# sourceMappingURL=index.css.map */
