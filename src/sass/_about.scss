@@ -1,0 +1,138 @@
+.container {
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 678px) {
+  .container {
+    width: 678px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.about {
+  background-color: #84a178;
+}
+.about__subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 1.23;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+  margin-top: 12px;
+}
+.about__title {
+  font-family: 'Seymour One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.26;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: #fcfcfc;
+  margin-top: 32px;
+}
+
+.about__img {
+  position: relative;
+  margin: 0 auto;
+
+  width: 278px;
+  height: 278px;
+  border: 1px solid rgba(248, 210, 78, 0.7);
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140.182px;
+}
+
+.about__img::before {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  content: ' ';
+  width: 278px;
+  height: 278px;
+
+  background-image: url(../images/korova-mobile.png);
+  background-repeat: no-repeat;
+}
+.about__text-item:not(:last-child) {
+  margin-bottom: 4px;
+}
+.about__text-item {
+  max-width: 220px;
+  margin: 0 auto;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.76;
+
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #fcfcfc;
+}
+
+.button {
+  width: 164px;
+  height: 42px;
+  background-color: #f8d24e;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 678px) {
+  .about__text-wrap {
+    margin-left: 32px;
+    width: 334px;
+    margin-bottom: 48px;
+    text-align: left;
+  }
+  .about__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about__img {
+    margin: 0;
+  }
+  .about__text-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+  .about__title {
+    margin-bottom: 72px;
+  }
+  .about__subtitle {
+    margin-bottom: 12px;
+  }
+}
