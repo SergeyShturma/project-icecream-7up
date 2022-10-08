@@ -23,6 +23,7 @@ font-size: 16px;
 line-height: 183%;
 letter-spacing: 0.04em;
 color: #D6936D;
+text-decoration: none;
 }
 .address:hover{
     text-decoration: underline;
@@ -84,4 +85,63 @@ color: #131313;
     background-color: #F8D24E;
     cursor: pointer;
     
+}
+
+@media screen and (max-width:767px){
+.contact-cards{
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 100%;
+margin-bottom: 32px;
+}
+.contact-card{
+    outline: solid 2px tomato;
+padding-bottom: 40px 32px;
+width: 280px;
+margin-right: auto;
+margin-left: auto;
+
+}   
+.contact-card-title,
+.city,
+.workday,
+.worktime {
+font-size: 12px;
+line-height: 183%;
+}
+.address{
+font-size: 12px;
+}
+.address-box{
+padding: 0 0 24px 0;
+}
+.contact-card-title {
+display: block;
+margin-bottom: 20px;
+}
+.workdays{
+padding: 24px 0;
+border-bottom: 1px solid #E1E1E1;
+margin-bottom: 24px;
+}
+.contact-items{
+font-size: 12px;
+}
+.contact-btns{
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 16px;
+}
+.contact-btn {
+    font-size: 14px;
+}
+}
+
+@media screen and (min-width:768px) {
+
+}
+@media screen and (min-width:1200px) {
+
 }
