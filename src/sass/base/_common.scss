@@ -13,15 +13,16 @@ ul {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+  list-style: none;
 }
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 .list {
   list-style: none;
-  color: inherit;
 }
 
 img {
