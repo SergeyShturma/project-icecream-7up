@@ -1,9 +1,10 @@
 :root {
-    --main-font-darkcolor: #131313;
-    --main-font-ligthcolor: #FCFCFC;
-    
-    --bgr-colorcard-first: #AEC6A5;
-    --bgr-colorcard-second: #EFD478;
-    --bgr-colorcard-third: #D6936D;
+  --transition-duration-and-timing-function: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  --main-font-darkcolor: #131313;
+  --main-font-ligthcolor: #fcfcfc;
+
+  --bgr-colorcard-first: #aec6a5;
+  --bgr-colorcard-second: #efd478;
+  --bgr-colorcard-third: #d6936d;
 }
