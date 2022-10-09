@@ -5,19 +5,21 @@
     margin-left: auto;
 }
 
-@media screen and (max-width:767px){
-.container {
+@media screen and (max-width:767px) {
+    .container {
         width: 480px;
+    }
+
 }
-    
-}
+
 @media screen and (min-width:768px) {
-.container {
+    .container {
         width: 768px;
     }
 }
+
 @media screen and (min-width:1200px) {
-.container {
+    .container {
         width: 1200px;
     }
 }
