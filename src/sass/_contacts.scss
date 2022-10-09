@@ -78,13 +78,12 @@ color: #131313;
     border: 2px solid #F8D24E;
     border-radius: 10px;
     background-color: transparent;
-
-}
-.contact-btn:hover,
-.contact-btn:focus{
+    margin: 0;
+&:hover,
+&:focus{
     background-color: #F8D24E;
     cursor: pointer;
-    
+}
 }
 
 @media screen and (max-width:767px){
@@ -96,8 +95,7 @@ width: 100%;
 margin-bottom: 32px;
 }
 .contact-card{
-    outline: solid 2px tomato;
-padding-bottom: 40px 32px;
+padding: 40px 32px;
 width: 280px;
 margin-right: auto;
 margin-left: auto;
@@ -132,6 +130,7 @@ font-size: 12px;
 display: flex;
 flex-direction: column;
 justify-content: center;
+align-items: center;
 gap: 16px;
 }
 .contact-btn {
@@ -140,8 +139,14 @@ gap: 16px;
 }
 
 @media screen and (min-width:768px) {
-
+.contact-card {
+        padding: 40px 24px;
+        width: 280px;
+    }
 }
 @media screen and (min-width:1200px) {
-
+.contact-card {
+        padding: 40px;
+        width: 368px;
+    }
 }
