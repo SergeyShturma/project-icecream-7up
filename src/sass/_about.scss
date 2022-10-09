@@ -48,22 +48,20 @@
     #d9d9d9;
   box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
   border-radius: 140.182px;
+
+  &::before {
+    position: absolute;
+    top: 26px;
+    left: 0;
+    content: ' ';
+    width: 278px;
+    height: 278px;
+
+    background-image: url(../images/korova-mobile.png);
+    background-repeat: no-repeat;
+  }
 }
 
-.about__img::before {
-  position: absolute;
-  top: 26px;
-  left: 0;
-  content: ' ';
-  width: 278px;
-  height: 278px;
-
-  background-image: url(../images/korova-mobile.png);
-  background-repeat: no-repeat;
-}
-.about__text-item:not(:last-child) {
-  margin-bottom: 4px;
-}
 .about__text-item {
   max-width: 220px;
   margin: 0 auto;
@@ -77,6 +75,9 @@
   letter-spacing: 0.04em;
 
   color: #fcfcfc;
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
 }
 .about__text-item--hidden {
   display: none;
@@ -92,12 +93,10 @@
   border-radius: 10px;
 }
 
-@media screen and (min-width: 678px) {
+@media screen and (min-width: 768px) {
   .about__text-wrap {
     margin-left: 32px;
-    width: 334px;
     margin-bottom: 48px;
-    text-align: left;
   }
   .about__content {
     display: flex;
@@ -105,11 +104,28 @@
     align-items: center;
   }
   .about__img {
+    width: 335px;
+    height: 331px;
     margin: 0;
+    border-radius: 165.879px;
+
+    &::before {
+      content: ' ';
+      width: 335px;
+      height: 331px;
+
+      background-image: url(../images/korova-tablet.png);
+      background-repeat: no-repeat;
+    }
   }
-  .about__text-item:not(:last-child) {
-    margin-bottom: 8px;
+  .about__text-item {
+    width: 334px;
+
+    &:not(:last-child) {
+      margin-bottom: 8px;
+    }
   }
+
   .about__text-item--hidden {
     display: block;
   }
