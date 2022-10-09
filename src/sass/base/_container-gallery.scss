@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+.container-gallery {
+    margin-top: 24px;
+    position: relative;
+}
+}
+@media screen and (min-width: 768px) {
+.container-gallery {
+        margin-top: 164px;
+        position: relative;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container-gallery {
+            margin-top: 24px;
+            position: relative;
+        }
+}
