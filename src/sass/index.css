@@ -155,6 +155,7 @@ button {
   border: 2px solid #F8D24E;
   border-radius: 10px;
   background-color: transparent;
+  margin: 0;
 }
 .contact-btn:hover, .contact-btn:focus {
   background-color: #F8D24E;
@@ -170,8 +171,7 @@ button {
     margin-bottom: 32px;
   }
   .contact-card {
-    outline: solid 2px tomato;
-    padding-bottom: 40px 32px;
+    padding: 40px 32px;
     width: 280px;
     margin-right: auto;
     margin-left: auto;
@@ -205,10 +205,23 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 16px;
   }
   .contact-btn {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contact-card {
+    padding: 40px 24px;
+    width: 280px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-card {
+    padding: 40px;
+    width: 368px;
   }
 }
 .visually-hidden {
