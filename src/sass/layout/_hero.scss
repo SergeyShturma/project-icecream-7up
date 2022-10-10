@@ -1,4 +1,4 @@
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .hero {
         background-color: #84A178;
         height:502px; 
@@ -83,7 +83,7 @@
       display: none;
     }
     }
-    @media screen and (min-width: 768px) and (max-width:1199px) {
+    @media screen and (min-width: 768px) and (max-width:1200px) {
       .hero {
         background-color: #84A178;
         height:415px; 
@@ -201,9 +201,10 @@
       font-weight: 400;
       line-height: 1.25;
       color: #fcfcfc;
+      text-align: right;
     }
     }
-    @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
       .hero {
         background-color: #84A178;
         height:664px; 
@@ -328,5 +329,6 @@
       font-weight: 400;
       line-height: 1.21;
       color: #fcfcfc;
+      text-align: right;
     }
     } 
