@@ -99,8 +99,14 @@
   content: ' ';
   width: 100%;
   height: 100%;
-
+  background-size: cover;
   background-image: url(../images/korova-mobile.png);
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: url('../images/korova-mobile@2x.png');
+  }
 
   @media screen and (min-width: 768px) {
     content: ' ';
@@ -108,6 +114,12 @@
     height: 331px;
 
     background-image: url(../images/korova-tablet.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/korova-tablet@2x.png');
+    }
   }
   @media screen and (min-width: 1200px) {
     top: 39px;
@@ -117,7 +129,12 @@
     height: 490px;
 
     background-image: url(../images/korova-desktop.png);
-    background-repeat: no-repeat;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/korova-desktop@2x.png');
+    }
   }
 }
 
@@ -185,11 +202,150 @@
     margin-right: auto;
   }
 }
+.about__icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  stroke: #0000;
+}
 
 .about__button {
   width: 164px;
   height: 42px;
   background-color: #f8d24e;
   border-radius: 10px;
-  margin-right: auto;
+  padding: 15px 34px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  border: 0ch;
+
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    margin-right: auto;
+  }
+  &:hover {
+    background-color: green;
+  }
+  &:focus {
+    background-color: green;
+    color: white;
+    outline: green;
+    .about__icon {
+      stroke: #fcfcfc;
+    }
+  }
+}
+
+// modal-window-video
+
+.backdrop-modal-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: visibility var(--transition-duration-and-timing-function),
+    opacity var(--transition-duration-and-timing-function);
+}
+.backdrop-modal-video.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal-video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.modal-video__close-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.modal-video__titel {
+  font-weight: 400;
+  line-height: 140%;
+  color: #131313;
+  text-align: center;
+  margin: 20px 28px 28px 28px;
+}
+.modal-video__caption {
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  text-align: center;
+  color: #131313;
+}
+
+@media screen and (max-width: 767px) {
+  .modal-video {
+    max-width: 280px;
+  }
+
+  .modal-video__player {
+    width: 224px;
+    height: 199px;
+    margin: 0 28px;
+    border-radius: 10px;
+  }
+  .modal-video__titel {
+    font-size: 14px;
+    margin: 20px 28px 28px 28px;
+  }
+}
+.modal-video__caption {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 28px;
+}
+.modal-video__close-btn {
+  top: 8px;
+  right: 8px;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-video {
+    max-width: 568px;
+  }
+  .modal-video__player {
+    width: 448px;
+    height: 205px;
+    margin: 0 60px;
+    border-radius: 10px;
+  }
+  .modal-video__caption {
+    font-size: 20px;
+    line-height: 28px;
+    margin-top: 32px;
+  }
+
+  .modal-video__close-btn {
+    top: 20px;
+    right: 20px;
+  }
+
+  .modal-video__titel {
+    font-size: 14px;
+    margin: 32px 60px;
+  }
 }

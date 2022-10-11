@@ -227,8 +227,7 @@
 .products-button {
     display: flex;
     justify-content: center;
-    border-radius: none;
-
+    border: none;
 }
 
 .products-button__icon {
@@ -288,6 +287,7 @@
         width: 300px;
         height: 300px;
         top: -55%;
+        left: -50.5%;
     }
 }
 
@@ -338,6 +338,7 @@
         width: 300px;
         height: 300px;
         top: -55%;
+        left: -50.5%;
     }
 }
 
@@ -389,5 +390,6 @@
         width: 300px;
         height: 300px;
         top: -55%;
+        left: -50.5%;
     }
 }
