@@ -1,55 +1,161 @@
 <header class="page-header">
-    <div class="header container">
-        <img  class="header__logo" src="" alt="logo">
-        <nav class="menu">
-            <ul class="list menu__list">
-                <li class="menu__item"><a class="menu__link  link" href="">Home</a></li>
-                <li class="menu__item"><a class="menu__link  link" href="">How it’s made?</a></li>          
-                <li class="menu__item"><a class="menu__link  link" href="">Our products</a></li>
-                <li class="menu__item"><a class="menu__link  link" href="">Contact</a></li>
-            </ul>
-        </nav>
-        <button type="button" class="open-mobile-menu-btn ">
-            <svg class="open-mobile-menu-btn__icon" aria-label="кнопка-бургер" width="32" height="32">
-                <use href=""></use>
-            </svg>
-        </button>
-        <button type="button" class="header__button">Buy now ></button>
-
+  <div class="header container">
+    <picture>
+      <source
+        srcset="./images/Logo-desktop.png 1x, ./images/Logo-desktop@2x.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="./images/logo-tablet.png 1x, ./images/logo-tablet2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
+        media="(max-width: 768px)"
+      />
+      <img src="./images/logo-mobile.png" alt="logo" />
+    </picture>
+    <nav class="menu">
+      <ul class="list menu__list">
+        <li class="menu__item"><a class="menu__link link" href="#">Home</a></li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">How it’s made?</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu__tablet">
+      <button type="button" class="open-mobile-menu-btn" data-menu-open>
+        <svg
+          class="open-mobile-menu-btn__icon"
+          aria-label="burger-button"
+          width="32"
+          height="32"
+        >
+          <use href="./images/symbol-defs.svg#icon-Burger"></use>
+        </svg>
+      </button>
+      <button type="button" class="buy-button" data-modal-open>
+        Buy now >
+      </button>
     </div>
-    <div class="mobile-menu js-menu-container">
-        <div class="container mobile-menu__container">
-            <button type="button" class="modal-menu__close-btn ">
-                <svg class="modal-menu-close__icon" width="40" height="40">
-                  <use href=""></use>
-                </svg>
-            </button>  
-            <ul class="list mobile-menu__list">
-                <li class="mobile-menu__item"><a class="mobile-menu__link  link" href="">Home</a></li>
-                <li class="mobile-menu__item"><a class="mobile-menu__link  link" href="">How it’s made?</a></li>          
-                <li class="mobile-menu__item"><a class="mobile-menu__link  link" href="">Our products</a></li>
-                <li class="mobile-menu__item"><a class="mobile-menu__link  link" href="">Contact</a></li>
-            </ul>
-            <button type="button" class="header__button">Buy now ></button>
-        </div>
+  </div>
+  <div class="mobile-menu js-menu-container" data-menu>
+    <picture class="mobile-logo">
+      <source
+        srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
+        media="(max-width: 768px)"
+      />
+      <source
+        srcset="./images/logo-tablet.png 1x, ./images/logo-tablet2x.png 2x"
+        media="(min-width: 768px)"
+      />
+      <img src="./images/logo-mobile.png" alt="logo" />
+    </picture>
+    <button type="button" class="modal-menu__close-btn" data-menu-close>
+      <svg
+        class="modal-menu-close__icon"
+        aria-label="close-button"
+        width="32"
+        height="32"
+      >
+        <use href="./images/symbol-defs.svg#icon-ep_close"></use>
+      </svg>
+    </button>
+    <div class="container mobile-menu__container">
+      <ul class="list mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#">How it’s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#">Contact</a>
+        </li>
+      </ul>
+      <button type="button" class="mobile-menu__buy-button" data-menu-open>
+        Buy now >
+      </button>
     </div>
+  </div>
 </header>
 <main>
-    <section class="hero">
-        <div class="container">
-            <h1 class="hero__tittle">ice cream made with passion</h1>
-            <button class="hero__modal-btn" type="button" >Products</button>
-            <button class="hero__modal-btn" type="button" >Products</button>
-            <img src="" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
-            <svg>
-                <use href=""></use>
-            </svg>
-            <img src="" alt="">
-            <ul>
-                <li>16<span>cafes</span></li>
-                <li>23<span>trucks</span></li>
-            </ul>
-        </div>
-    </section>
+  <section class="hero section">
+    <div class="container hero__container">
+      <h1 class="hero__tittle">ice cream made with passion</h1>
+      <div class="hero__button">
+        <button class="hero__btn--products" type="button">Products</button>
+        <button class="hero__btn--made" type="button">How it’s made?</button>
+      </div>
+      <div class="hero__deko">
+        <p class="hero__subtittle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="hero__arrow" aria-label="arrow" width="40">
+          <use href="./images/symbol-defs.svg#icon-Frame-56" width="40"></use>
+        </svg>
+      </div>
+      <picture class="hero__ice-cream">
+        <source
+          srcset="./images/img1-desktop.png 1x, ./images/img1-desktop@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/img1-tablet.png 1x, ./images/img1-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/img1-mobile.png 1x, ./images/img1-mobile@2x.png 2x"
+          media="(max-width: 768px)"
+        />
+        <img src="./images/img1-mobile.png" alt="ice-cream" />
+      </picture>
+      <picture class="hero__ice-cream-plate">
+        <source
+          srcset="./images/img2-desktop.png 1x, ./images/img2-desktop@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/img2-tablet.png 1x, ./images/img2-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img src="./images/img2-tablet.png" alt="ice-cream plate" />
+      </picture>
+      <picture class="hero__points">
+        <source
+          srcset="./images/img3-desktop.png 1x, ./images/img3-desktop@2x.png 2x"
+          media="(min-width: 1200px)"
+        />
+        <source
+          srcset="./images/img3-tablet.png 1x, ./images/img3-tablet@2x.png 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/img3-mobile.png 1x, ./images/img3-mobile@2x.png 2x"
+          media="(max-width: 768px)"
+        />
+        <img src="./images/img3-mobile.png" alt="points" />
+      </picture>
+      <ul class="hero__info">
+        <li class="hero__list list">
+          <p class="hero__info--top">16</p>
+          <p class="hero__info--bottom">cafes</p>
+        </li>
+        <li class="hero__list list">
+          <p class="hero__info--top">23</p>
+          <p class="hero__info--bottom">trucks</p>
+        </li>
+      </ul>
+    </div>
+  </section>
 </main>
