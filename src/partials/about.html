@@ -25,34 +25,44 @@
             <p>This is enough to choose ice cream and coffee for any mood!</p>
           </li>
         </ul>
-        <button class="about__button" data-modal-open>Read more</button>
+        <button class="about__button data-modal-open">
+          Read more
+          <svg class="about__icon">
+            <use href="./images/sprite.svg#icon-peak"></use>
+          </svg>
+        </button>
       </div>
     </div>
   </div>
-<div class="backdrop-modal-video is-hidden" data-modal>
+  <div class="backdrop-modal-video is-hidden" data-modal>
     <div>
-        <div class="modal-video">
-            <button class="modal-video__close-btn" data-modal-close>
-                <svg class="modal-video__close-icon" width="20" height="20">
-                    <use href="./images/icons.svg#modal-video__close-icon"></use>
-                </svg>
-            </button>
-            <div class="modal-video__caption-flex">
-                <h3 class="modal-video__caption">How it’s made?</h3>
-            </div>
-            <div class="player">
-                <iframe class="modal-video__player" src="https://www.youtube.com/embed/NsSsqyzXL4c"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
-            </div>
-
-
-            <p class="modal-video__titel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore
-                et Lorem ipsum dolor
-                sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+      <div class="modal-video">
+        <button class="modal-video__close-btn" data-modal-close>
+          <svg class="modal-video__close-icon" width="20" height="20">
+            <use href="./images/icons.svg#modal-video__close-icon"></use>
+          </svg>
+        </button>
+        <div class="modal-video__caption-flex">
+          <h3 class="modal-video__caption">How it’s made?</h3>
         </div>
+        <div class="player">
+          <iframe
+            class="modal-video__player"
+            src="https://www.youtube.com/embed/NsSsqyzXL4c"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+
+        <p class="modal-video__titel">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et
+        </p>
+      </div>
     </div>
-</div>
+  </div>
 </section>
