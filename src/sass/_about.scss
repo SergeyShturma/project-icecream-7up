@@ -202,21 +202,27 @@
     margin-right: auto;
   }
 }
+.about__icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  stroke: #0000;
+}
 
 .about__button {
   width: 164px;
   height: 42px;
   background-color: #f8d24e;
   border-radius: 10px;
-  margin: 0 auto;
   padding: 15px 34px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
+  line-height: 1.29;
+  border: 0ch;
 
+  margin: 0 auto;
   display: flex;
   align-items: center;
   text-align: center;
@@ -224,12 +230,17 @@
   @media screen and (min-width: 768px) {
     margin-right: auto;
   }
-}
-
-.about__icon {
-  width: 12px;
-  height: 12px;
-  margin-left: 5px;
+  &:hover {
+    background-color: green;
+  }
+  &:focus {
+    background-color: green;
+    color: white;
+    outline: green;
+    .about__icon {
+      stroke: #fcfcfc;
+    }
+  }
 }
 
 // modal-window-video
