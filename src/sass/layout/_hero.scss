@@ -22,6 +22,8 @@
       display: flex;
       gap: 8px;
       margin-top: 32px;
+      position: relative;
+      z-index: 3;
     }
     .hero__btn--products {
       background-color: transparent;
@@ -34,6 +36,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -53,10 +56,11 @@
       font-size: 8px;
       font-weight: 600;
       line-height: 1.25;
-     &focus {
+      transition: background-color var(--transition-duration-and-timing-function);
+      &:focus {
       color:#fcfcfc;
      }
-     &:default {
+      &:default {
       color: #ABABAB;
      }
     }
@@ -71,7 +75,7 @@
       z-index: 0;
       bottom: -52px;
       left: 38px;
-     
+      z-index: 1;
     
     }
     .hero__points {
@@ -119,6 +123,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -138,6 +143,7 @@
       font-size: 8px;
       font-weight: 600;
       line-height: 1.25;
+      transition: color var(--transition-duration-and-timing-function);
      &:focus {
       color:#fcfcfc;
      }
@@ -228,6 +234,8 @@
       display: flex;
       gap: 12px;
       margin-top: 28px;
+      position: relative;
+      z-index: 3;
     }
     .hero__btn--products {
       background-color: transparent;
@@ -240,6 +248,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -262,6 +271,7 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 1.21;
+      transition: var(--transition-duration-and-timing-function);
      &:focus {
       color:#fcfcfc;
      }
@@ -308,6 +318,7 @@
       position: absolute;
       bottom: -10px;
       left: -10px;
+      z-index: 1;
     }
     .hero__info {
       display: block;
