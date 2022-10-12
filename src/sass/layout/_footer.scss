@@ -1,0 +1,233 @@
+@media screen and (max-width: 767px) {
+    .container {
+        width: 480px;
+    }
+    .footer-page{
+        background-color: #84A178;
+    padding-bottom: 68px;}
+
+    .footer-caption {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 16px;
+        margin-bottom: 40px;
+    }
+    .footer-border{padding: 40 0;
+        width: 100%;
+        border-bottom: 1px solid #E1E1E1;}
+
+    .slogan-item {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.22;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    .caption-item {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.20;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+    .social-list{display: flex;
+        justify-content: flex-end;
+       column-gap: 28px;
+    margin-bottom: 40px;}
+
+       .tel-desc{display: flex;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        color: #131313;}
+
+    .contact-link{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        color: #FCFCFC;
+        text-decoration: none;
+    }
+
+
+
+ .copyright{font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+     color: #7A7A7A;
+    margin-top: 10px;}
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+ .footer-page {
+     background-color: #84A178;
+     padding-top: 40px;
+ }
+
+ .footer-caption {
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+     row-gap: 9px;
+     margin-bottom: 40px;
+ }
+
+ .footer-border {
+     padding: 40 0;
+     width: 100%;
+     border-bottom: 1px solid #E1E1E1;
+ }
+
+ .slogan-item {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.20;
+    text-transform: uppercase;
+    color: #FCFCFC;
+ }
+
+ .caption-item {
+    font-weight: 700;
+        font-size: 48px;
+        line-height: 1.22;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+ }
+ 
+ .social-list {
+     display: flex;
+     justify-content: flex-end;
+     
+     column-gap: 30px;
+     margin-bottom: 32px;
+ }
+ .social-icon{
+    width: 34;
+    height: 34;}
+
+ .tel-desc {
+     display: flex;
+     justify-content: flex-end;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.86;
+     color: #131313;
+ }
+
+ .contact-link {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.86;
+     color: #FCFCFC;
+     text-decoration: none;
+ }
+
+
+ .copyright {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+    text-align: center;
+    margin-top: 14px;
+    margin-bottom: 14px;
+ }
+ .tablet-br{display: none;}
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+
+        .footer-page {
+            background-color: #84A178;
+            padding-top: 120px;
+        }
+    
+        .footer-caption {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            row-gap: 14px;
+        }
+        .footer-border {
+            padding: 40 0;
+            width: 100%;
+            border-bottom: 1px solid #E1E1E1;
+        }
+    
+        .slogan-item {
+        font-weight: 400;
+            font-size: 30px;
+            line-height: 1.23;
+            text-transform: uppercase;
+            color: #FCFCFC;
+        }
+    
+        .caption-item {
+            font-weight: 700;
+                font-size: 58px;
+                line-height: 1.22;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                color: #FCFCFC;
+        }
+    
+        .social-list {
+            display: flex;
+            justify-content: flex-end;
+    
+            column-gap: 30px;
+            margin-bottom: 32px;
+        }
+    
+        .social-icon {
+            width: 34;
+            height: 34;
+        }
+    
+        .tel-desc {
+            display: flex;
+            justify-content: flex-end;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.86;
+            color: #131313;
+        }
+    
+        .contact-link {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.86;
+            color: #FCFCFC;
+            text-decoration: none;
+        }
+    
+    
+        .copyright {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.02em;
+            color: #7A7A7A;
+            text-align: center;
+            margin-top: 14px;
+            margin-bottom: 14px;
+        }
+    
+        .desktop-br {
+            display: none;
+        }
+}
