@@ -22,11 +22,13 @@
       display: flex;
       gap: 8px;
       margin-top: 32px;
+      z-index: 3;
+      position: relative;
     }
     .hero__btn--products {
       background-color: transparent;
       border-radius: 8px;
-      border-color: #F8D24E;
+      border: 2px solid #F8D24E;
       width: 62px;
       height: 24px;
       font-family: 'Montserrat', sans-serif;
@@ -34,6 +36,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      margin: 0;
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -53,6 +56,7 @@
       font-size: 8px;
       font-weight: 600;
       line-height: 1.25;
+      margin: 0;
      &focus {
       color:#fcfcfc;
      }
@@ -111,7 +115,7 @@
     .hero__btn--products {
       background-color: transparent;
       border-radius: 8px;
-      border-color: #F8D24E;
+      border: 2px solid #F8D24E;
       width: 62px;
       height: 24px;
       font-family: 'Montserrat', sans-serif;
@@ -119,6 +123,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      margin: 0;
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -138,6 +143,7 @@
       font-size: 8px;
       font-weight: 600;
       line-height: 1.25;
+      margin: 0;
      &:focus {
       color:#fcfcfc;
      }
@@ -228,11 +234,13 @@
       display: flex;
       gap: 12px;
       margin-top: 28px;
+      z-index: 3;
+      position: relative;
     }
     .hero__btn--products {
       background-color: transparent;
       border-radius: 8px;
-      border-color: #F8D24E;
+      border: 2px solid #F8D24E;
       width: 134px;
       height: 42px;
       font-family: 'Montserrat', sans-serif;
@@ -240,6 +248,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      margin: 0;
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -262,6 +271,7 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 1.21;
+      margin: 0;
      &:focus {
       color:#fcfcfc;
      }
@@ -308,6 +318,7 @@
       position: absolute;
       bottom: -10px;
       left: -10px;
+      z-index: 1;
     }
     .hero__info {
       display: block;
