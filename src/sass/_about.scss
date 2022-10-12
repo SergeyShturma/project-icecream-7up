@@ -1,10 +1,8 @@
 .about {
-  background-color: #84a178;
+  background-color: var(--input-border-color);
 }
 
 .about__subtitle {
-  font-family: 'Montserrat', sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 22px;
   line-height: 1.23;
@@ -12,7 +10,7 @@
   text-align: center;
   text-transform: uppercase;
 
-  color: #fcfcfc;
+  color: var(--main-font-ligthcolor);
   margin-bottom: 12px;
 }
 
@@ -26,7 +24,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #fcfcfc;
+  color: var(--main-font-ligthcolor);
   margin-bottom: 32px;
 
   @media screen and (min-width: 768px) {
@@ -145,7 +143,7 @@
   font-size: 12px;
   line-height: 1.76;
   text-align: center;
-  color: #fcfcfc;
+  color: var(--main-font-ligthcolor);
 
   @media screen and (min-width: 768px) {
     max-width: 334px;
@@ -202,44 +200,46 @@
     margin-right: auto;
   }
 }
-.about__icon {
-  width: 12px;
-  height: 12px;
-  margin-left: 5px;
-  stroke: #0000;
-}
 
 .about__button {
   width: 164px;
   height: 42px;
-  background-color: #f8d24e;
+  background-color: var(--modal-button-color);
   border-radius: 10px;
   padding: 15px 34px;
-  font-family: 'Montserrat';
-  font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.29;
   border: 0ch;
 
-  margin: 0 auto;
   display: flex;
   align-items: center;
   text-align: center;
-
+  @media screen and (max-width: 767px) {
+    margin: 0 auto;
+  }
   @media screen and (min-width: 768px) {
     margin-right: auto;
   }
+
   &:hover {
-    background-color: green;
+    background-color: var(--bgr-button-greencolor);
   }
   &:focus {
-    background-color: green;
-    color: white;
-    outline: green;
-    .about__icon {
-      stroke: #fcfcfc;
-    }
+    background-color: var(--bgr-button-greencolor);
+    color: var(--main-font-ligthcolor);
+    outline: var(--bgr-button-greencolor);
+  }
+}
+
+.about__icon {
+  width: 12px;
+  height: 12px;
+  margin-left: 5px;
+  stroke: #131313;
+
+  .about__button:focus & {
+    stroke: var(--main-font-ligthcolor);
   }
 }
 
