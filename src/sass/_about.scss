@@ -137,10 +137,9 @@
 }
 
 .about__text-item {
-  max-width: 220px;
   margin: 0 auto;
-
-  font-size: 12px;
+  max-width: 220px;
+  font-size: 14px;
   line-height: 1.76;
   text-align: center;
   color: var(--main-font-ligthcolor);
@@ -215,6 +214,10 @@
   display: flex;
   align-items: center;
   text-align: center;
+
+  transition: background-color var(--transition-duration-and-timing-function),
+    color var(--transition-duration-and-timing-function);
+
   @media screen and (max-width: 767px) {
     margin: 0 auto;
   }
