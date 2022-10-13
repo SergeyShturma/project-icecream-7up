@@ -63,6 +63,10 @@ button {
     width: 1200px;
   }
 }
+.contacts {
+  background-color: #84A178;
+}
+
 .contact-cards {
   display: flex;
   gap: 32px;
@@ -70,7 +74,6 @@ button {
 }
 
 .contact-card {
-  outline: solid 2px tomato;
   padding: 40px;
   width: 368px;
   font-style: normal;
