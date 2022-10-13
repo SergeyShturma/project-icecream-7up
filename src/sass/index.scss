@@ -3,27 +3,27 @@
 @import './layout/hero';
 @import './layout/mobile-menu';
 @import './components/modal-buy-now';
+@import './components/modal-contacts-francise';
+@import './components/modal-contacts-map';
+@import './components/modals';
 @import './utils/variables';
-
 
 @import './base/section';
 @import './base/container';
 
 @import './layout/products';
-
-@import './contacts';
-
-@import './utils/variables';
-@import './utils/visually-hidden';
+@import './layout/advantages';
 
 @import './base/container';
 @import './contacts';
 @import './utils/visually-hidden';
 @import './about';
-
+@import './layout/gallery';
 @import './layout/customer-reviews';
 @import './components/modal-window';
 @import './components/modal-form';
+
 @import './components/backdrop';
 
 
+@import './layout/footer';
