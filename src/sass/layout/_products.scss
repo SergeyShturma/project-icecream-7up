@@ -1,20 +1,22 @@
 .products-section {
     background-color: #fff;
-    background-image: url(/src/images/bgr-pr-mob@1x.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100%;
-    margin: 0 auto;
+    background-image: url(/src/images/bgr-pr-mob1@1x.webp), url(/src/images/bgr-pr-mob2@1x.webp), url(/src/images/bgr-pr-mob3@1x.webp);
+    background-size: auto, auto, auto;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top center, center, bottom center;
+    margin:  auto;
+        
 
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
         screen and (min-resolution: 192dpi) and (max-width: 767px),
         screen and (min-resolution: 2dppx) and (max-width: 767px) {
-            background-image: url(/src/images/bgr-pr-mob@2x.webp);
+            background-image: url(/src/images/bgr-pr-mob1@2x.webp), url(/src/images/bgr-pr-mob2@2x.webp), url(/src/images/bgr-pr-mob3@2x.webp);
         }
 
    
 
     @media screen and (min-width: 768px) {
+        background-size: cover;
         background-image: url(/src/images/bgr-pr-tablet@1x.webp);
     }
 
