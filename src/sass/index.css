@@ -182,8 +182,8 @@ button {
   margin-right: auto;
 }
 
-.section {
-  background-color: #84a178;
+.hero {
+  background-color: #84A178;
 }
 
 @media screen and (max-width: 767px) {
@@ -1624,7 +1624,7 @@ button {
   width: 320px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -2223,7 +2223,7 @@ button {
   width: 320px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
@@ -2247,12 +2247,13 @@ button {
   gap: 32px;
   margin-bottom: 64px;
 }
+
 @media screen and (max-width: 767px) {
-  .contact-cards .contact-card:first-child {
+  .contact-card:first-child {
     margin-top: -345px;
   }
 }
-.contact-cards .contact-card {
+.contact-card {
   padding: 40px;
   width: 368px;
   font-style: normal;
@@ -2260,16 +2261,18 @@ button {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
+
 @media screen and (min-width: 1200px) {
-  .contact-cards .contact-card {
+  .contact-card {
     margin-top: -96px;
   }
 }
-.contact-cards .address-box {
+.address-box {
   padding: 32px 0;
   border-bottom: 1px solid #e1e1e1;
 }
-.contact-cards .address {
+
+.address {
   font-weight: 500;
   font-size: 16px;
   line-height: 183%;
@@ -2277,54 +2280,64 @@ button {
   color: #d6936d;
   text-decoration: none;
 }
-.contact-cards .address:hover {
+
+.address:hover {
   text-decoration: underline;
 }
-.contact-cards .contact-card-title,
-.contact-cards .city,
-.contact-cards .workday,
-.contact-cards .worktime {
+
+.contact-card-title,
+.city,
+.workday,
+.worktime {
   font-weight: 500;
   font-size: 16px;
   line-height: 186%;
   letter-spacing: 0.04em;
   color: #131313;
 }
-.contact-cards .contact-card-title {
+
+.contact-card-title {
   display: inline;
   padding: 5px;
   text-transform: uppercase;
   background: #f8d24e;
   border-radius: 6px;
 }
-.contact-cards .city {
+
+.city {
   margin-bottom: 8px;
 }
-.contact-cards .workdays {
+
+.workdays {
   padding: 32px 0;
   border-bottom: 1px solid #e1e1e1;
   margin-bottom: 32px;
 }
-.contact-cards .worktime {
+
+.worktime {
   color: #ababab;
 }
-.contact-cards .contact-items {
+
+.contact-items {
   font-weight: 500;
   font-size: 16px;
   line-height: 183%;
   color: #131313;
 }
-.contact-cards .contact-tel,
-.contact-cards .contact-mail {
+
+.contact-tel,
+.contact-mail {
   color: #131313;
   text-decoration: none;
 }
-.contact-cards .contact-btns {
+
+.contact-btns {
   display: flex;
   justify-content: center;
   gap: 16px;
 }
-.contact-cards .contact-btn {
+
+.contact-btn {
   width: 196px;
   padding: 12px 0;
   border: 2px solid #f8d24e;
@@ -2332,74 +2345,74 @@ button {
   background-color: transparent;
   margin: 0;
 }
-.contact-cards .contact-btn:hover,
-.contact-cards .contact-btn:focus {
+.contact-btn:hover, .contact-btn:focus {
   background-color: #f8d24e;
   cursor: pointer;
 }
+
 @media screen and (max-width: 767px) {
-  .contact-cards .contact-cards {
+  .contact-cards {
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
     margin-bottom: 32px;
   }
-  .contact-cards .contact-card {
+  .contact-card {
     padding: 40px 32px;
     width: 280px;
     margin-right: auto;
     margin-left: auto;
   }
-  .contact-cards .contact-card-title,
-  .contact-cards .city,
-  .contact-cards .workday,
-  .contact-cards .worktime {
+  .contact-card-title,
+.city,
+.workday,
+.worktime {
     font-size: 12px;
     line-height: 183%;
   }
-  .contact-cards .address {
+  .address {
     font-size: 12px;
   }
-  .contact-cards .address-box {
+  .address-box {
     padding: 0 0 24px 0;
   }
-  .contact-cards .contact-card-title {
+  .contact-card-title {
     display: block;
     margin-bottom: 20px;
   }
-  .contact-cards .workdays {
+  .workdays {
     padding: 24px 0;
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 24px;
   }
-  .contact-cards .contact-items {
+  .contact-items {
     font-size: 12px;
   }
-  .contact-cards .contact-btns {
+  .contact-btns {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
   }
-  .contact-cards .contact-btn {
+  .contact-btn {
     font-size: 14px;
   }
 }
 @media screen and (min-width: 768px) {
-  .contact-cards .contact-card {
+  .contact-card {
     padding: 40px 24px;
     width: 280px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .contact-cards .contact-card {
+  .contact-card {
     padding: 40px;
     width: 368px;
   }
 }
-.contact-cards .contacts {
+.contacts {
   padding-top: 0px;
   background-color: var(--accent-color);
 }
@@ -2929,7 +2942,7 @@ button {
   background-color: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .modal {
     position: absolute;
     top: 50%;
@@ -2955,6 +2968,7 @@ button {
     align-items: center;
     background-color: transparent;
     border: none;
+    fill: var(--main-font-darkcolor);
   }
   .modal-close-button:hover .close-icon,
   .modal-close-button:focus .close-icon {
@@ -2964,7 +2978,7 @@ button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal-title {
-    font-family: 'Seymour One';
+    font-family: "Seymour One", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -3164,7 +3178,7 @@ button {
     margin-bottom: 11px;
   }
   .ingredients-list__span {
-    font-family: 'Montserrat';
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.78;
