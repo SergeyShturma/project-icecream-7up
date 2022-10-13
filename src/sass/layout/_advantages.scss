@@ -1,212 +1,201 @@
 .advantages {
-    background-color: var(--input-border-color);
+  background-color: var(--input-border-color);
 
-    @media screen and (min-width: 480px) {
-        padding-bottom: 36px;
-      }
-
-    @media screen and (min-width: 768px) {
-        padding-top: 48px;
-        margin-bottom: 40px;
-      }
-
-
-    @media screen and (min-width: 1200px) {
-        padding-top: 60px;
-        margin-bottom: 86px;
-      }
-  }
-  .advantages__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
-        flex-direction: row;
-        gap: 80px;
-        margin-left: 76px;
-        margin-right: 76px;
-      }
-
-    @media screen and (min-width: 1200px) {
-        flex-direction: row;
-        gap: 32px;
-        margin-left: 16px;
-        margin-right: 16px;
-      }
-
+  @media screen and (max-width: 767px) {
+    padding-bottom: 36px;
   }
 
-  .advantages__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 0;
-      }
-
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 0;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-top: 48px;
+    padding-bottom: 40px;
   }
-  .advantages__icon__first::before {
-    content: '';
-    background-color: var(--bgr-advantage-icon);
-    background-image: url(../images/cow.png);
-    border-radius: 50%;
-    background-size: 36px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50px;
-    height: 50px;
+}
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
 
-
-    @media screen and (min-width: 480px) {
-        margin-bottom: 16px;
-
-      }
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 80px;
+    margin-left: 76px;
+    margin-right: 76px;
   }
 
-  .advantages__icon__second::before {
-    content: '';
-    background-color: var(--bgr-advantage-icon);
-    background-image: url(../images/weight.png);
-    border-radius: 50%;
-    background-size: 36px;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 50px;
-    height: 50px;
-
-    @media screen and (min-width: 480px) {
-        margin-bottom: 16px;
-
-      }
-
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
-  
-  .advantages__icon__third::before {
-    content: ' ';
-    background-color: var(--bgr-advantage-icon);
-    background-image: url(../images/ice_crema.png);
-    border-radius: 50%;
-    background-repeat: no-repeat;
-    background-size: 36px;
-    background-position: center;
-    width: 50px;
-    height: 50px;
+}
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 16px;
-      }
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    @media screen and (min-width: 768px) {
-        margin-bottom: 32px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 40px;
-    }
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
   }
 
-  .advantages__title {
-    margin-top: 40px;
-    font-weight: 700;
-    font-size: 58px;
-    line-height: 1.20;
-    color: var(--main-font-ligthcolor);
-    text-align: center;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-
-    @media screen and (min-width: 480px) {
-        font-size: 36px;
-        margin-top: 16px;
-        line-height: 1.17;
-      }
-
-    @media screen and (min-width: 768px) {
-        font-size: 48px;
-        line-height: 1.22;
-        text-transform: lowercase;
-      }
-    
-    @media screen and (min-width: 1200px) {
-        margin-bottom: 16px;
-        font-size: 58px;
-      }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
-  .advantages__text {
+}
+.advantages__icon__first::before {
+  content: '';
+  background-color: var(--bgr-advantage-icon);
+  background-image: url(../images/cow.png);
+  border-radius: 50%;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__icon__second::before {
+  content: '';
+  background-color: var(--bgr-advantage-icon);
+  background-image: url(../images/weight.png);
+  border-radius: 50%;
+  background-size: 36px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__icon__third::before {
+  content: ' ';
+  background-color: var(--bgr-advantage-icon);
+  background-image: url(../images/ice_crema.png);
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: 36px;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 40px;
+  }
+}
+
+.advantages__title {
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 1.2;
+  color: var(--main-font-ligthcolor);
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 480px) {
+    font-size: 36px;
     margin-top: 16px;
-    width: 300px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.22;
+    text-transform: lowercase;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 16px;
+    font-size: 58px;
+  }
+}
+.advantages__text {
+  margin-top: 16px;
+  width: 300px;
+  font-weight: 200;
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.02em;
+  color: var(--main-font-ligthcolor);
+
+  @media screen and (min-width: 480px) {
+    margin-bottom: 27px;
+    margin-top: 18px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.7;
+    width: 230px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 140px;
+    font-size: 14px;
     font-weight: 200;
+    line-height: 1.7;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 308px;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 1.76;
+    line-height: 176%;
     letter-spacing: 0.02em;
-    color: var(--main-font-ligthcolor);
+  }
+}
 
-    @media screen and (min-width: 480px) {
-        margin-bottom: 27px;
-        margin-top: 18px;
-        font-weight: 700;
-        font-size: 12px;
-        line-height: 1.7;
-        width: 230px;
-      }
+.advantages__title:hover {
+  animation-name: changeBgColor;
+  animation-duration: 3000ms;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
 
-    @media screen and (min-width: 768px) {
-        width: 140px;
-        font-size: 14px;
-        font-weight: 200;
-        line-height: 1.7;
-        margin-bottom: 40px;
-      }
-    
-    @media screen and (min-width: 1200px) {
-        width: 308px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 176%;
-        letter-spacing: 0.02em;
-      }
+@keyframes changeBgColor {
+  0% {
+    color: var(--bgr-advantage-icon);
   }
 
-  .advantages__title:hover {
-    animation-name: changeBgColor;
-    animation-duration: 3000ms;
-    animation-timing-function: linear;
-    animation-direction: alternate;
+  50% {
+    color: var(--color-animation-text);
   }
 
-  @keyframes changeBgColor {
-    0% {
-      color: var(--bgr-advantage-icon);
-    }
-  
-    50% {
-      color: var(--color-animation-text);
-    }
-  
-    100% {
-      color: var(--bgr-colorcard-third);
-    }
+  100% {
+    color: var(--bgr-colorcard-third);
   }
-  
+}
