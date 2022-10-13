@@ -1,0 +1,116 @@
+.gallery-bgr {
+  background-color: #ffffff;
+  background-image: linear-gradient(
+      to bottom,
+      var(--accent-color) 24px,
+      transparent 24px,
+      transparent 1094px,
+      var(--accent-color) 1094px
+    ),
+    url(../images/bgr-gallery-mobile.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+    screen and (min-resolution: 192dpi) and (max-width: 767px),
+    screen and (min-resolution: 2dppx) and (max-width: 767px) {
+    background-image: linear-gradient(
+        to bottom,
+        var(--accent-color) 24px,
+        transparent 24px,
+        transparent 1094px,
+        var(--accent-color) 1094px
+      ),
+      url(../images/bgr-gallery-mobile@2x.webp);
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--accent-color) 55px,
+        transparent 55px,
+        transparent 1100px,
+        var(--accent-color) 1100px
+      ),
+      url(../images/bgr-gallery-tablet.webp);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: linear-gradient(
+        to bottom,
+        var(--accent-color) 55px,
+        transparent 55px,
+        transparent 1100px,
+        var(--accent-color) 1100px
+      ),
+      url(../images/bgr-gallery-tablet@2x.webp);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1900px;
+    background-image: linear-gradient(
+        to bottom,
+        var(--accent-color) 94px,
+        transparent 94px,
+        transparent 1107px,
+        var(--accent-color) 1107px
+      ),
+      url(../images/bgr-gallery-desktop.webp);
+  }
+
+  @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    screen and (min-resolution: 192dpi) and (min-width: 1200px),
+    screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to bottom,
+        var(--accent-color) 94px,
+        transparent 94px,
+        transparent 1107px,
+        var(--accent-color) 1107px
+      ),
+      url(../images/bgr-gallery-desktop@2x.webp);
+  }
+}
+
+
+// .products-section {
+//     background-color: #fff;
+//     background-image: url(/src/images/bgr-pr-mob@1x.webp);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     height: 100%;
+//     margin: 0 auto;
+
+//     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+//         screen and (min-resolution: 192dpi) and (max-width: 767px),
+//         screen and (min-resolution: 2dppx) and (max-width: 767px) {
+//             background-image: url(/src/images/bgr-pr-mob@2x.webp);
+//         }
+
+   
+
+//     @media screen and (min-width: 768px) {
+//         background-image: url(/src/images/bgr-pr-tablet@1x.webp);
+//     }
+
+//     @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+//     screen and (min-resolution: 192dpi) and (min-width: 768px),
+//     screen and (min-resolution: 2dppx) and (min-width: 768px) {
+//         background-image: url(/src/images/bgr-pr-tablet@2x.webp);
+//     }
+
+//     @media screen and (min-width: 1200px) {
+//         background-image: url(/src/images/bgr-pr-desktop@1x.webp);
+//     }
+
+//     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+//     screen and (min-resolution: 192dpi) and (min-width: 1200px),
+//     screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+//         background-image: url(/src/images/bgr-pr-desktop@2x.webp);
+//     }
+// }
