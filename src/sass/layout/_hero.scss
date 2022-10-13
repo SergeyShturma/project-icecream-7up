@@ -1,10 +1,16 @@
-@media screen and (max-width: 768px) {
-    .hero {
-        background-color: #84A178;
+.hero__container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section {
+  background-color: #84A178;
+
+}
+@media screen and (max-width: 767px) {
+    
+  .hero {
         height:502px; 
-        max-width: 1600px;
-        position: relative;
-        
     }
     .hero__tittle {
       width: 247px;
@@ -26,6 +32,8 @@
       z-index: 3;
     }
     .hero__btn--products {
+      display: block;
+      padding: 5px 9px;
       background-color: transparent;
       border-radius: 8px;
       border: 2px solid #F8D24E;
@@ -36,6 +44,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      margin: 0;
       box-shadow: 0px, 4px rgba(0, 0, 0, 0.25);
       transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
       &:focus {
@@ -47,6 +56,8 @@
       }
     }
     .hero__btn--made {
+      display: block;
+      padding: 5px 7px;
       background-color: transparent;
       text-decoration: underline;
       border: none;
@@ -57,6 +68,7 @@
       font-size: 8px;
       font-weight: 600;
       line-height: 1.25;
+      margin: 0;
       transition: background-color var(--transition-duration-and-timing-function);
       &:focus {
       color:#fcfcfc;
@@ -74,26 +86,24 @@
     .hero__ice-cream {
       position: absolute;
       z-index: 0;
-      bottom: -52px;
+      bottom: -290px;
       left: 38px;
       z-index: 1;
     
     }
     .hero__points {
       position: absolute;
-      bottom: 0;
+      bottom: -237px;
       left: 0;
     }
     .hero__info {
       display: none;
     }
     }
-    @media screen and (min-width: 768px) and (max-width:1200px) {
+    @media screen and (min-width: 768px) and (max-width:1199px) {
+     
       .hero {
-        background-color: #84A178;
         height:415px; 
-        max-width: 1600px;
-        position: relative;
         
     }
     .hero__tittle {
@@ -114,6 +124,8 @@
       margin-top: 20px;
     }
     .hero__btn--products {
+      padding: 6px 10px;
+      display: block;
       background-color: transparent;
       border-radius: 8px;
       border: 2px solid #F8D24E;
@@ -124,6 +136,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      margin: 0;
       transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
@@ -134,6 +147,8 @@
       }
     }
     .hero__btn--made {
+      padding: 6px 7px;
+      display: block;
       background-color: transparent;
       text-decoration: underline;
       border: none;
@@ -144,6 +159,7 @@
       font-size: 8px;
       font-weight: 600;
       line-height: 1.25;
+      margin: 0;
       transition: color var(--transition-duration-and-timing-function);
      &:focus {
       color:#fcfcfc;
@@ -176,24 +192,24 @@
       display: block;
       position: absolute;
       left: 32px;
-      bottom: 14px;
+      bottom: -5px;
       z-index: 1;
     }
     .hero__ice-cream {
       position: absolute;
-      bottom: -52px;
+      bottom: -78px;
       left: 370px;
     }
     .hero__points {
       position: absolute;
-      bottom: 0;
+      bottom: -22px;
       left: 0;
     }
     .hero__info {
       display: block;
       position: absolute;
       right: 32px;
-      bottom: 215px;
+      bottom: 210px;
     }
     .hero__info--top {
       font-family: 'Montserrat', sans-serif;
@@ -212,11 +228,9 @@
     }
     }
   @media screen and (min-width: 1200px) {
-      .hero {
-        background-color: #84A178;
+    
+    .hero {
         height:664px; 
-        max-width: 1600px;
-        position: relative;
         
     }
     .hero__tittle {
@@ -239,6 +253,8 @@
       z-index: 3;
     }
     .hero__btn--products {
+      padding: 12px 34px;
+      display: block;
       background-color: transparent;
       border-radius: 8px;
       border: 2px solid #F8D24E;
@@ -249,6 +265,7 @@
       font-weight: 600;
       line-height: 1.25;
       color: #131313;
+      margin: 0;
       transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
@@ -262,6 +279,8 @@
       }
     }
     .hero__btn--made {
+      padding: 12px 21px;
+      display: block;
       background-color: transparent;
       text-decoration: underline;
       border: none;
@@ -272,6 +291,7 @@
       font-size: 14px;
       font-weight: 600;
       line-height: 1.21;
+      margin: 0;
       transition: var(--transition-duration-and-timing-function);
      &:focus {
       color:#fcfcfc;
@@ -306,26 +326,26 @@
     .hero__ice-cream-plate {
       display: block;
       position: absolute;
-      left: 8px;
-      bottom: 59px;
+      left: 15px;
+      bottom: -22px;
     }
     .hero__ice-cream {
       position: absolute;
-      bottom: -100px;
+      bottom: -188px;
       left: 560px;
       z-index: 2;
     }
     .hero__points {
       position: absolute;
-      bottom: 0;
+      bottom: -88px;
       left: -10px;
       z-index: 1;
     }
     .hero__info {
       display: block;
       position: absolute;
-      right: 25px;
-      bottom: 362px;
+      right: 15px;
+      bottom: 302px;
     }
     .hero__info--top {
       font-family: 'Montserrat', sans-serif;
