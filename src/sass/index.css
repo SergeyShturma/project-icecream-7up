@@ -183,7 +183,7 @@ button {
 }
 
 .hero {
-  background-color: #84A178;
+  background-color: #84a178;
 }
 
 @media screen and (max-width: 767px) {
@@ -2345,7 +2345,8 @@ button {
   background-color: transparent;
   margin: 0;
 }
-.contact-btn:hover, .contact-btn:focus {
+.contact-btn:hover,
+.contact-btn:focus {
   background-color: #f8d24e;
   cursor: pointer;
 }
@@ -2365,9 +2366,9 @@ button {
     margin-left: auto;
   }
   .contact-card-title,
-.city,
-.workday,
-.worktime {
+  .city,
+  .workday,
+  .worktime {
     font-size: 12px;
     line-height: 183%;
   }
@@ -2978,7 +2979,7 @@ button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal-title {
-    font-family: "Seymour One", sans-serif;
+    font-family: 'Seymour One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -3178,7 +3179,7 @@ button {
     margin-bottom: 11px;
   }
   .ingredients-list__span {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.78;
