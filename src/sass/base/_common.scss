@@ -1,6 +1,10 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'Seymour+One', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.04em;
 }
 
 h1,
@@ -21,11 +25,11 @@ ul {
 
 .link {
   text-decoration: none;
+  color: inherit;
 }
 
 .list {
   list-style: none;
-  color: inherit;
 }
 
 img {
@@ -40,4 +44,5 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 10px;
+  background-color: inherit;
 }

@@ -1,0 +1,288 @@
+@media screen and (max-width: 767px) {
+    .container {
+        width: 480px;
+    }
+    .footer-page{
+        background-color: #84A178;
+ }
+    .flex{display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-caption {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    
+    .slogan-item {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.22;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+
+    .caption-item {
+        font-weight: 700;
+        font-size: 34px;
+        line-height: 1.20;
+        text-transform: uppercase;
+        color: #FCFCFC;
+    }
+    .social-media {
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            flex-direction: column;
+            margin-left: auto;
+        }
+    .social-list{display: flex;
+        justify-content: flex-end;
+       column-gap: 28px;
+    margin-bottom: 40px;}
+
+    .social-icon {
+            width: 32;
+            height: 32;
+            fill: currentColor;
+        }
+
+     .tel-desc{display: flex;
+        justify-content: flex-end;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        color: #131313;}
+
+    .contact-link{
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.86;
+        color: #FCFCFC;
+        text-decoration: none;
+    }
+
+    .border {
+    padding: 10px 0 68px 0;
+    width: 100%;
+    border-top: 1px solid #E1E1E1;
+}
+
+ .copyright{font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+     color: #7A7A7A;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+ .footer-page {
+     background-color: #84A178;
+ }
+
+ .flex{display: flex;
+    padding-top: 40px;
+    padding-bottom: 32px;}
+
+ .footer-caption {
+     display: flex;
+     justify-content: flex-start;
+     flex-direction: column;
+     row-gap: 9px;
+ }
+
+ 
+
+ .slogan-item {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.20;
+    text-transform: uppercase;
+    color: #FCFCFC;
+ }
+
+ .caption-item {
+    font-weight: 700;
+        font-size: 48px;
+        line-height: 1.22;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: #FCFCFC;
+ }
+  
+  .social-media{
+    display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: end;
+        flex-direction: column;
+        margin-left: auto;
+  }
+ 
+ .social-list {
+     display: flex;
+     justify-content: flex-end;
+     
+     column-gap: 30px;
+     margin-bottom: 32px;
+ }
+ .social-icon{
+    width: 34;
+    height: 34;}
+
+ .tel-desc {
+     display: flex;
+     justify-content: flex-end;
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.86;
+     color: #131313;
+ }
+
+ .contact-link {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: 1.86;
+     color: #FCFCFC;
+     text-decoration: none;
+ }
+
+.border {
+    padding: 14px 0;
+    width: 100%;
+    border-top: 1px solid #E1E1E1;
+}
+ .copyright {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.86;
+    letter-spacing: 0.02em;
+    color: #7A7A7A;
+    text-align: center;
+ }
+ .tablet-br{display: none;}
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+    .flex{
+        display: flex;
+        justify-content: baseline;
+        padding-top: 120px;
+        padding-bottom: 54px;}
+
+        .footer-page {
+            background-color: #84A178;
+        }
+    
+        .footer-caption {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            row-gap: 14px;
+            margin-left: auto;
+        }
+        .border {
+            width: 100%;
+            border-top: 1px solid #E1E1E1;
+            padding: 12px 0;
+        }
+    
+        .slogan-item {
+        font-weight: 400;
+            font-size: 30px;
+            line-height: 1.23;
+            text-transform: uppercase;
+            color: #FCFCFC;
+        }
+    
+        .caption-item {
+            font-weight: 700;
+                font-size: 58px;
+                line-height: 1.22;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                color: #FCFCFC;
+        }
+
+        .social-media{ display: flex;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            flex-direction: column;
+            margin-left: auto;
+        }
+    
+        .social-list {
+            display: flex;
+            justify-content: flex-end;
+    
+            column-gap: 30px;
+            margin-bottom: 32px;
+        }
+    
+        .icon-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 34;
+            width: 34;
+            border-radius: 50%;
+            color: #84A178;
+             
+        }
+        .icon-link:hover{
+                color: #FCFCFC;
+            }
+        .social-icon {
+            width: 34;
+            height: 34;
+            fill: currentColor;
+                &hover {
+                    fill: #FCFCFC;
+                }
+        }
+    
+        .tel-desc {
+            display: flex;
+            justify-content: flex-end;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.86;
+            color: #131313;
+        }
+    
+        .contact-link {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.86;
+            color: #FCFCFC;
+            text-decoration: none;
+        }
+    
+    
+        .copyright {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 1.86;
+            letter-spacing: 0.02em;
+            color: #7A7A7A;
+            text-align: center;
+        }
+    
+        .desktop-br {
+            display: none;
+        }
+}
