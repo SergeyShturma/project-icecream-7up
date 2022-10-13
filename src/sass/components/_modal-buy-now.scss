@@ -314,25 +314,46 @@
   background-color: #d6936d;
 }
 
-.backdrop {
+.modal-buy-now__open-btn {
+  transition: background-color var(--transition-duration-and-timing-function);
+}
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 10;
-  overflow-y: scroll;
-  background: rgba(0, 0, 0, 0.2);
-  transition: opacity var(--transition-duration-and-timing-function),
-    visibility var(--transition-duration-and-timing-function);
+
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
 }
 
-.backdrop.is-hidden {
-  visibility: hidden;
+/* Стили для модальных окон */
+
+.modal {
+  /* Скрываем окна  */
   opacity: 0;
-  pointer-events: none;
+  visibility: hidden;
+
+  /*  Центрируем и задаем z-index */
+
+  z-index: 30; /* Должен быть выше чем у подложки*/
+
+  /*  Побочные стили   */
+
+  transition: 0.3s all;
 }
 
-.modal-buy-now__open-btn {
-  transition: background-color var(--transition-duration-and-timing-function);
+/* Стили для активных классов подложки и окна */
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

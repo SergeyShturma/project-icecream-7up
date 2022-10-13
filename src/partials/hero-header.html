@@ -17,15 +17,17 @@
     </picture>
     <nav class="menu">
       <ul class="list menu__list">
-        <li class="menu__item"><a class="menu__link link" href="#">Home</a></li>
         <li class="menu__item">
-          <a class="menu__link link" href="#">How it’s made?</a>
+          <a class="menu__link link" href="#hero-header">Home</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" href="#">Our products</a>
+          <a class="menu__link link" href="#how it’s made?">How it’s made?</a>
         </li>
         <li class="menu__item">
-          <a class="menu__link link" href="#">Contact</a>
+          <a class="menu__link link" href="#products">Our products</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link link" href="#contacts">Contact</a>
         </li>
       </ul>
     </nav>
@@ -40,7 +42,7 @@
           <use href="./images/symbol-defs.svg#icon-Burger"></use>
         </svg>
       </button>
-      <button type="button" class="buy-button" data-modal-open>
+      <button type="button" class="buy-button js-open-modal" data-modal="1">
         Buy now >
       </button>
     </div>
@@ -70,19 +72,23 @@
     <div class="container mobile-menu__container">
       <ul class="list mobile-menu__list">
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="#">Home</a>
+          <a class="mobile-menu__link link" href="#hero-header">Home</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="#">How it’s made?</a>
+          <a class="mobile-menu__link link" href="#about">How it’s made?</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="#">Our products</a>
+          <a class="mobile-menu__link link" href="#products">Our products</a>
         </li>
         <li class="mobile-menu__item">
-          <a class="mobile-menu__link link" href="#">Contact</a>
+          <a class="mobile-menu__link link" href="#contacts">Contact</a>
         </li>
       </ul>
-      <button type="button" class="mobile-menu__buy-button" data-menu-open>
+      <button
+        type="button"
+        class="mobile-menu__buy-button js-open-modal"
+        data-modal="2"
+      >
         Buy now >
       </button>
     </div>
@@ -148,11 +154,11 @@
       </picture>
       <ul class="hero__info">
         <li class="hero__list list">
-          <p class="hero__info--top">16</p>
+          <strong class="hero__info--top">16</strong>
           <p class="hero__info--bottom">cafes</p>
         </li>
         <li class="hero__list list">
-          <p class="hero__info--top">23</p>
+          <strong class="hero__info--top">23</strong>
           <p class="hero__info--bottom">trucks</p>
         </li>
       </ul>
