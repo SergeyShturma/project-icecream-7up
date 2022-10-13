@@ -1,6 +1,131 @@
-<div class="backdrop is-hidden" data-modal>
+<div class="modal" data-modal="1">
   <div class="modal-buy-now">
-    <button class="modal-buy-now__btn" type="button" data-modal-close>
+    <button
+      class="modal-buy-now__btn js-modal-close"
+      type="button"
+      data-modal-close
+    >
+      <svg lang="en" aria-label="close icon" class="modal-buy-now__btn-icon">
+        <use href="/src/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="form-buy-now">
+      <strong class="form-buy-now__title">Buy now</strong>
+      <ul class="form-buy-now__list-wrapper">
+        <li class="form-buy-now__item">
+          <label class="form-buy-now__radio-label form-buy-now__radio-label-g"
+            ><input
+              class="form-buy-now__radio-input"
+              type="radio"
+              name="dessert"
+              value="ice cream"
+              required
+            /><img
+              class="form-buy-now__pic"
+              srcset="/src/images/buy-now-icecream@2x.webp 2x"
+              src="/src/images/buy-now-icecream.webp"
+              alt="ice cream"
+            />
+            <img
+              class="form-buy-now__pic-bgc form-buy-now__pic-bgc-green"
+              srcset="/src/images/buy-now-icecream-green@2x.webp 2x"
+              src="/src/images/buy-now-icecream-green.webp"
+              alt="green"
+            />
+            <span class="form-buy-now__label-title">ice cream</span></label
+          >
+        </li>
+        <li class="form-buy-now__item">
+          <label class="form-buy-now__radio-label form-buy-now__radio-label-y"
+            ><input
+              class="form-buy-now__radio-input"
+              type="radio"
+              name="dessert"
+              value="ice coffee"
+              checked
+              required
+            />
+            <img
+              class="form-buy-now__pic"
+              srcset="/src/images/buy-now-icecoffee@2x.webp 2x"
+              src="/src/images/buy-now-icecoffee.webp"
+              alt="ice coffee"
+            />
+            <img
+              class="form-buy-now__pic-bgc form-buy-now__pic-bgc-yellow"
+              srcset="/src/images/buy-now-icecoffee-yellow@2x.webp 2x"
+              src="/src/images/buy-now-icecoffee-yellow.webp"
+              alt="yellow"
+            /><span class="form-buy-now__label-title">ice coffee</span></label
+          >
+        </li>
+        <li class="form-buy-now__item">
+          <label class="form-buy-now__radio-label form-buy-now__radio-label-b"
+            ><input
+              class="form-buy-now__radio-input"
+              type="radio"
+              name="dessert"
+              value="milkshake"
+              required
+            />
+            <img
+              class="form-buy-now__pic"
+              srcset="/src/images/buy-now-milkshake@2x.webp 2x"
+              src="/src/images/buy-now-milkshake.webp"
+              alt="ice cream"
+            />
+            <img
+              class="form-buy-now__pic-bgc form-buy-now__pic-bgc-brown"
+              srcset="/src/images/buy-now-milkshake-brown@2x.webp 2x"
+              src="/src/images/buy-now-milkshake-brown.webp"
+              alt="green"
+            />
+            <span class="form-buy-now__label-title">milkshake</span></label
+          >
+        </li>
+      </ul>
+      <div class="form-buy-now__field val-name">
+        <input
+          type="text"
+          class="form-buy-now__input req"
+          name="user-name"
+          autocomplete="name"
+          pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="form-buy-now__field val-tel">
+        <input
+          type="tel"
+          class="form-buy-now__input req"
+          name="user-tel"
+          autocomplete="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone"
+          required
+        />
+      </div>
+      <div class="form-buy-now__field">
+        <textarea
+          class="form-buy-now__comment"
+          name="user-comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="form-buy-now__btn-submit" type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<div class="modal" data-modal="2">
+  <div class="modal-buy-now">
+    <button
+      class="modal-buy-now__btn js-modal-close"
+      type="button"
+      data-modal-close
+    >
       <svg lang="en" aria-label="close icon" class="modal-buy-now__btn-icon">
         <use href="/src/images/sprite.svg#icon-close"></use>
       </svg>
