@@ -1,4 +1,4 @@
-@media screen and (max-width:768px) {    
+@media screen and (max-width:767px) {    
 .modal {
     position: absolute;
     top: 50%;
@@ -37,7 +37,7 @@
 }
 
 .modal-title {
-font-family: 'Seymour One';
+font-family: 'Seymour One', sans-serif;
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
@@ -290,7 +290,7 @@ margin-bottom: 24px;
 }
 
 .ingredients-list__span {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.78;
