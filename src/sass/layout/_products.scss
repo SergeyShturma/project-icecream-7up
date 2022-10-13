@@ -236,7 +236,7 @@
     &:hover,
     &:focus {
         width: 50px;
-        transition: var(--products-transition);
+        transition: var(--transition-duration-and-timing-function);
     }
 }
 
