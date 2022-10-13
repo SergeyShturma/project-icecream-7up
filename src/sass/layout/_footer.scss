@@ -4,19 +4,21 @@
     }
     .footer-page{
         background-color: #84A178;
-    padding-bottom: 68px;}
+ }
+    .flex{display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
     .footer-caption {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         row-gap: 16px;
-        margin-bottom: 40px;
     }
-    .footer-border{padding: 40 0;
-        width: 100%;
-        border-bottom: 1px solid #E1E1E1;}
-
+    
     .slogan-item {
         font-weight: 700;
         font-size: 18px;
@@ -32,12 +34,25 @@
         text-transform: uppercase;
         color: #FCFCFC;
     }
+    .social-media {
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            flex-direction: column;
+            margin-left: auto;
+        }
     .social-list{display: flex;
         justify-content: flex-end;
        column-gap: 28px;
     margin-bottom: 40px;}
 
-       .tel-desc{display: flex;
+    .social-icon {
+            width: 32;
+            height: 32;
+            fill: currentColor;
+        }
+
+     .tel-desc{display: flex;
         justify-content: flex-end;
         font-weight: 700;
         font-size: 12px;
@@ -52,14 +67,18 @@
         text-decoration: none;
     }
 
-
+    .border {
+    padding: 10px 0 68px 0;
+    width: 100%;
+    border-top: 1px solid #E1E1E1;
+}
 
  .copyright{font-weight: 700;
     font-size: 14px;
     line-height: 1.52;
     text-align: center;
      color: #7A7A7A;
-    margin-top: 10px;}
+    }
 }
 
 
@@ -69,22 +88,20 @@
     }
  .footer-page {
      background-color: #84A178;
-     padding-top: 40px;
  }
+
+ .flex{display: flex;
+    padding-top: 40px;
+    padding-bottom: 32px;}
 
  .footer-caption {
      display: flex;
      justify-content: flex-start;
      flex-direction: column;
      row-gap: 9px;
-     margin-bottom: 40px;
  }
 
- .footer-border {
-     padding: 40 0;
-     width: 100%;
-     border-bottom: 1px solid #E1E1E1;
- }
+ 
 
  .slogan-item {
     font-weight: 400;
@@ -102,6 +119,15 @@
         text-transform: uppercase;
         color: #FCFCFC;
  }
+  
+  .social-media{
+    display: flex;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: end;
+        flex-direction: column;
+        margin-left: auto;
+  }
  
  .social-list {
      display: flex;
@@ -131,7 +157,11 @@
      text-decoration: none;
  }
 
-
+.border {
+    padding: 14px 0;
+    width: 100%;
+    border-top: 1px solid #E1E1E1;
+}
  .copyright {
     font-weight: 700;
     font-size: 14px;
@@ -139,8 +169,6 @@
     letter-spacing: 0.02em;
     color: #7A7A7A;
     text-align: center;
-    margin-top: 14px;
-    margin-bottom: 14px;
  }
  .tablet-br{display: none;}
 
@@ -150,10 +178,14 @@
     .container {
         width: 1200px;
     }
+    .flex{
+        display: flex;
+        justify-content: baseline;
+        padding-top: 120px;
+        padding-bottom: 54px;}
 
         .footer-page {
             background-color: #84A178;
-            padding-top: 120px;
         }
     
         .footer-caption {
@@ -161,11 +193,12 @@
             justify-content: flex-start;
             flex-direction: column;
             row-gap: 14px;
+            margin-left: auto;
         }
-        .footer-border {
-            padding: 40 0;
+        .border {
             width: 100%;
-            border-bottom: 1px solid #E1E1E1;
+            border-top: 1px solid #E1E1E1;
+            padding: 12px 0;
         }
     
         .slogan-item {
@@ -184,6 +217,13 @@
                 text-transform: uppercase;
                 color: #FCFCFC;
         }
+
+        .social-media{ display: flex;
+            flex-wrap: nowrap;
+            align-content: flex-start;
+            flex-direction: column;
+            margin-left: auto;
+        }
     
         .social-list {
             display: flex;
@@ -193,9 +233,26 @@
             margin-bottom: 32px;
         }
     
+        .icon-link{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 34;
+            width: 34;
+            border-radius: 50%;
+            color: #84A178;
+             
+        }
+        .icon-link:hover{
+                color: #FCFCFC;
+            }
         .social-icon {
             width: 34;
             height: 34;
+            fill: currentColor;
+                &hover {
+                    fill: #FCFCFC;
+                }
         }
     
         .tel-desc {
@@ -223,8 +280,6 @@
             letter-spacing: 0.02em;
             color: #7A7A7A;
             text-align: center;
-            margin-top: 14px;
-            margin-bottom: 14px;
         }
     
         .desktop-br {
