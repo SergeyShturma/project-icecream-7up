@@ -2620,6 +2620,10 @@ button {
   stroke: var(--main-font-ligthcolor);
 }
 
+.modal-video-position {
+  position: relative;
+}
+
 .modal-video {
   position: absolute;
   top: 50%;
@@ -2675,6 +2679,7 @@ button {
   text-align: center;
   width: 100%;
   color: #131313;
+  margin-top: 28px;
 }
 @media screen and (min-width: 768px) {
   .modal-video__caption {
@@ -2691,12 +2696,13 @@ button {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .modal-video__player {
     width: 448px;
     height: 205px;
-    margin: 0 60px;
+    margin-top: 32px;
     border-radius: 10px;
   }
 }
@@ -2705,9 +2711,10 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
+  font-size: 14px;
   color: #131313;
-  text-align: center;
   margin: 20px 28px 28px 28px;
+  text-align: left;
 }
 @media screen and (min-width: 768px) {
   .modal-video__titel {
