@@ -1,16 +1,11 @@
-.contact-cards {
-  display: flex;
-  gap: 32px;
-  margin-bottom: 64px;
+.contacts{
+    background-color: #84A178;
 }
-.contact-card {
-  // outline: solid 2px tomato;
-  padding: 40px;
-  width: 368px;
-  font-style: normal;
-  background: #ffffff;
-  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
-  border-radius: 24px;
+.contact-cards{
+
+display: flex;
+gap: 32px;
+margin-bottom: 64px;
 }
 
 @media screen and (max-width: 767px) {
@@ -18,11 +13,13 @@
     margin-top: -345px;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .contact-card {
-    margin-top: -304px;
-  }
+.contact-card{
+padding: 40px;
+width: 368px;
+font-style: normal;
+background: #FFFFFF;
+box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+border-radius: 24px;
 }
 
 @media screen and (min-width: 1200px) {

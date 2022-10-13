@@ -1,38 +1,24 @@
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal-close-button" data-modal-close>
+<div class="backdrop is-hidden">
+  <div class="modal" data-modal="9">
+    <button type="button" class="modal-close-button js-modal-close" data-modal-close>
       <svg class="modal-close-icon">
-        <use class="close-icon" href="./images/icons.svg#close-icon"></use>
+        <use class="close-icon" href="/src/images/icons.svg#close-icon"></use>
       </svg>
     </button>
     <p class="modal-title">Chololate icecream</p>
     <picture class="picture">
       <source
-        srcset="
-          ./images/modal-img/icecream-desktop.jpg    1x,
-          ./images/modal-img/icecream-desktop@2x.jpg 2x
-        "
-        media="(min-width: 1200px)"
-      />
+        srcset="/src/images/modal-img/icecream-desktop.jpg 1x, /src/images/modal-img/icecream-desktop@2x.jpg 2x"
+        media="(min-width: 1200px)"/>
       <source
-        srcset="
-          ./images/modal-img/icecream-tablet.jpg    1x,
-          ./images/modal-img/icecream-tablet@2x.jpg 2x
-        "
-        media="(min-width: 768px)"
-      />
+        srcset="/src/images/modal-img/icecream-tablet.jpg 1x, /src/images/modal-img/icecream-tablet@2x.jpg 2x"
+        media="(min-width: 768px)"/>
       <source
-        srcset="
-          ./images/modal-img/icecream-mobile.jpg    1x,
-          ./images/modal-img/icecream-mobile@2x.jpg 2x
-        "
-        media="(max-width: 767px)"
-      />
-      <img
-        class="modal-img"
+        srcset="/src/images/modal-img/icecream-mobile.jpg 1x, /src/images/modal-img/icecream-mobile@2x.jpg 2x"
+        media="(max-width: 767px)"/>
+      <img class="modal-img"
         src="./images/modal-img/icecream.jpg"
-        alt="icecream"
-      />
+        alt="icecream"/>
     </picture>
     <ul class="calories-list">
       <li class="calories-list__item">
