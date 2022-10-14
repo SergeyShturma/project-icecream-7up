@@ -25,11 +25,11 @@
     border-radius: 10px;
   }
 
-  .modal-close-icon {
+  .modal-products__close-icon {
     width: 20px;
     height: 20px;
   }
-  .modal-close-button {
+  .modal-products__btn-close {
     position: absolute;
     top: 28px;
     right: 20px;
@@ -45,7 +45,7 @@
     }
   }
 
-  .close-icon {
+  .modal-products__close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -179,7 +179,7 @@
     border-radius: 10px;
   }
 
-  .modal-close-button {
+  .modal-products__btn-close {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -188,13 +188,13 @@
     align-items: center;
     background-color: transparent;
 
-    &:hover .close-icon,
-    &:focus .close-icon {
+    &:hover .modal-products__close-icon,
+    &:focus .modal-products__close-icon {
       fill: var(--bgr-colorcard-first);
     }
   }
 
-  .close-icon {
+  .modal-products__close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
