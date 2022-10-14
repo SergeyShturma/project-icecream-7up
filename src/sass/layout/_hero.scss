@@ -46,7 +46,7 @@
       color: #131313;
       margin: 0;
       box-shadow: 0px, 4px rgba(0, 0, 0, 0.25);
-      transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+      transition: border-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -57,7 +57,7 @@
     }
     .hero__btn--made {
       display: block;
-      padding: 5px 7px;
+      padding: 5px 5px;
       background-color: transparent;
       text-decoration: underline;
       border: none;
@@ -137,7 +137,7 @@
       line-height: 1.25;
       color: #131313;
       margin: 0;
-      transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+      transition: border-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -147,7 +147,7 @@
       }
     }
     .hero__btn--made {
-      padding: 6px 7px;
+      padding: 6px 4px;
       display: block;
       background-color: transparent;
       text-decoration: underline;
@@ -208,7 +208,7 @@
     .hero__info {
       display: block;
       position: absolute;
-      right: 32px;
+      right: 16px;
       bottom: 210px;
     }
     .hero__info--top {
@@ -253,7 +253,7 @@
       z-index: 3;
     }
     .hero__btn--products {
-      padding: 12px 34px;
+      padding: 12px 28px;
       display: block;
       background-color: transparent;
       border-radius: 8px;
@@ -266,7 +266,7 @@
       line-height: 1.25;
       color: #131313;
       margin: 0;
-      transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+      transition: border-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -279,7 +279,7 @@
       }
     }
     .hero__btn--made {
-      padding: 12px 21px;
+      padding: 12px 15px;
       display: block;
       background-color: transparent;
       text-decoration: underline;
@@ -308,7 +308,7 @@
       flex-direction: column;
       gap: 32px;
       margin-top: 111px;
-      margin-left: 247px;
+      margin-left: 240px;
     }
     .hero__subtittle {
       width: 200px;
@@ -327,17 +327,17 @@
       display: block;
       position: absolute;
       left: 15px;
-      bottom: -22px;
+      bottom: -8px;
     }
     .hero__ice-cream {
       position: absolute;
-      bottom: -188px;
+      bottom: -168px;
       left: 560px;
       z-index: 2;
     }
     .hero__points {
       position: absolute;
-      bottom: -88px;
+      bottom: -68px;
       left: -10px;
       z-index: 1;
     }
