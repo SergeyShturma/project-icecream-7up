@@ -25,11 +25,11 @@
     border-radius: 10px;
   }
 
-  .modal-close-icon {
+  .modal-products__close-icon {
     width: 20px;
     height: 20px;
   }
-  .modal-close-button {
+  .modal-products__btn {
     position: absolute;
     top: 28px;
     right: 20px;
@@ -179,7 +179,7 @@
     border-radius: 10px;
   }
 
-  .modal-close-button {
+  .modal-products__btn {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -309,7 +309,7 @@
   }
 }
 
-.modal-close-icon {
+.modal-products__close-icon {
   display: flex;
   justify-content: center;
   align-items: center;
