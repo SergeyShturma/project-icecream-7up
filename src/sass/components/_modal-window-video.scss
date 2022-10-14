@@ -9,8 +9,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   background: #fcfcfc;
-  border-radius: 10px;
-  border: 2px solid #f8d24e;
+
 
   @media screen and (max-width: 767px) {
     width: 280px;
@@ -56,7 +55,6 @@
     font-family: 'Seymour One';
     font-size: 16px;
     line-height: 1.5;
-    text-align: center;
     width: 100%;
     color: #131313;
 
@@ -76,8 +74,6 @@
     width: 224px;
     height: 199px;
     margin-top: 0;
-    margin-left: auto;
-    margin-right: auto;
     border-radius: 10px;
     margin-top: 20px;
 
