@@ -24,7 +24,7 @@
       </ul>
     </nav>
     <div class="menu__tablet">
-      <button type="button" class="open-mobile-menu-btn" data-menu-open>
+      <button type="button" class="open-mobile-menu-btn js-open-menu">
         <svg
           class="open-mobile-menu-btn__icon"
           aria-label="burger-button"
@@ -39,7 +39,7 @@
       </button>
     </div>
   </div>
-  <div class="mobile-menu js-menu-container" data-menu>
+  <div class="mobile-menu js-menu-container">
     <picture class="mobile-logo">
       <source
         srcset="./images/logo-mobile.png 1x, ./images/logo-mobile@2x.png 2x"
@@ -51,7 +51,7 @@
       />
       <img src="./images/logo-mobile.png" alt="logo" />
     </picture>
-    <button type="button" class="modal-menu__close-btn">
+    <button type="button" class="modal-menu__close-btn js-close-menu">
       <svg
         class="modal-menu-close__icon"
         aria-label="close-button"
@@ -62,8 +62,8 @@
       </svg>
     </button>
     <div class="container mobile-menu__container">
-      <ul class="list mobile-menu__list">
-        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#hero-header"data-menu-close>Home</a></li>
+      <ul class="list mobile-menu__list menu__navigation">
+        <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#hero-header">Home</a></li>
         <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#about">How it’s made?</a></li>
         <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#products">Our products</a></li>
         <li class="mobile-menu__item"><a class="mobile-menu__link link" href="#contacts">Contact</a></li>

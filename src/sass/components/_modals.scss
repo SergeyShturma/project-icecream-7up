@@ -19,20 +19,20 @@
 
 .modal {
   /* Скрываем окна  */
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
 
   /*  Установаем ширину окна  */
-  width: 100%;
-  max-width: 500px;
+  // width: 100%;
+  // max-width: 500px;
 
   /*  Центрируем и задаем z-index */
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
 
-  transform: translate(-50%, -50%);
-  z-index: 30; /* Должен быть выше чем у подложки*/
+  // transform: translate(-50%, -50%);
+  // z-index: 30; /* Должен быть выше чем у подложки*/
 
   /*  Побочные стили   */
 
@@ -49,7 +49,7 @@
   z-index: 9999;
   text-align: center;
   overflow-y: auto;
- 
+  overflow-x: hidden;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;

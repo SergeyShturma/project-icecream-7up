@@ -47,13 +47,13 @@
       color: #131313;
       margin: 0;
       box-shadow: 0px, 4px rgba(0, 0, 0, 0.25);
-      transition: border-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
+      transition: border var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
       &:focus {
-        border-color: #0A8817;
+        border: 2px solid #0A8817;
         color: #fcfcfc;
       }
       &:default {
-        border-color: #ABABAB;
+        border: 2px solid #ABABAB;
       }
     }
     .hero__btn--made {
@@ -70,7 +70,7 @@
       font-weight: 600;
       line-height: 1.25;
       margin: 0;
-      transition: background-color var(--transition-duration-and-timing-function);
+      transition: color var(--transition-duration-and-timing-function);
       &:focus {
       color:#fcfcfc;
      }
@@ -138,13 +138,13 @@
       line-height: 1.25;
       color: #131313;
       margin: 0;
-      transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
+      transition: border var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
       &:focus {
-        border-color: #0A8817;
+        border: 2px solid #0A8817;
         color: #fcfcfc;
       }
       &:default {
-        border-color: #ABABAB;
+        border: 2px solid #ABABAB;
       }
     }
     .hero__btn--made {
@@ -267,16 +267,16 @@
       line-height: 1.25;
       color: #131313;
       margin: 0;
-      transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function), border-color var(--transition-duration-and-timing-function);
+      transition: border var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function), border-color var(--transition-duration-and-timing-function);
       &:focus {
-        border-color: #0A8817;
+        border: 2px solid #0A8817;
         color: #fcfcfc;
       }
       &:hover {
-        border-color: #0A8817;
+        border: 2px solid #0A8817;
       }
       &:default {
-        border-color: #ABABAB;
+        border: 2px solid #ABABAB;
       }
     }
     .hero__btn--made {
