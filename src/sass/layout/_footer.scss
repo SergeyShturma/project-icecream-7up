@@ -49,7 +49,7 @@
     .social-icon {
             width: 32;
             height: 32;
-            fill: currentColor;
+            fill: var(--accent-color);
         }
 
      .tel-desc{display: flex;
@@ -137,6 +137,7 @@
      margin-bottom: 32px;
  }
  .social-icon{
+    fill: var(--accent-color);
     width: 34;
     height: 34;}
 
