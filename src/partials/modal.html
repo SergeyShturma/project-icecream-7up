@@ -1,68 +1,86 @@
-<div class="backdrop is-hidden">
-  <div class="modal" data-modal="9">
-    <button type="button" class="modal-close-button js-modal-close" data-modal-close>
-      <svg class="modal-close-icon">
-        <use class="close-icon" href="/src/images/icons.svg#close-icon"></use>
+<div class="modal" data-modal="9">
+  <div class="modal-products">
+    <button
+      type="button"
+      class="modal-products__btn js-modal-close"
+      data-modal-close
+    >
+      <svg class="modal-products__close-icon">
+        <use class="close-icon" href="/src/images/sprite.svg#icon-close"></use>
       </svg>
     </button>
     <p class="modal-title">Chololate icecream</p>
     <picture class="picture">
       <source
-        srcset="/src/images/modal-img/icecream-desktop.jpg 1x, /src/images/modal-img/icecream-desktop@2x.jpg 2x"
-        media="(min-width: 1200px)"/>
+        srcset="
+          /src/images/modal-img/icecream-desktop.jpg    1x,
+          /src/images/modal-img/icecream-desktop@2x.jpg 2x
+        "
+        media="(min-width: 1200px)"
+      />
       <source
-        srcset="/src/images/modal-img/icecream-tablet.jpg 1x, /src/images/modal-img/icecream-tablet@2x.jpg 2x"
-        media="(min-width: 768px)"/>
+        srcset="
+          /src/images/modal-img/icecream-tablet.jpg    1x,
+          /src/images/modal-img/icecream-tablet@2x.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
       <source
-        srcset="/src/images/modal-img/icecream-mobile.jpg 1x, /src/images/modal-img/icecream-mobile@2x.jpg 2x"
-        media="(max-width: 767px)"/>
-      <img class="modal-img"
+        srcset="
+          /src/images/modal-img/icecream-mobile.jpg    1x,
+          /src/images/modal-img/icecream-mobile@2x.jpg 2x
+        "
+        media="(max-width: 767px)"
+      />
+      <img
+        class="modal-img"
         src="./images/modal-img/icecream.jpg"
-        alt="icecream"/>
+        alt="icecream"
+      />
     </picture>
     <ul class="calories-list">
       <li class="calories-list__item">
-        <span class="calories-list__span first">320</span
-        ><span class="calories-list__span second">kcal</span>
+        <span class="calories-list__span first">320</span>
+        <span class="calories-list__span second">kcal</span>
       </li>
       <li class="calories-list__item">
-        <span class="calories-list__span first">4g</span
-        ><span class="calories-list__span second">Prote...</span>
+        <span class="calories-list__span first">4g</span>
+        <span class="calories-list__span second">Prote...</span>
       </li>
       <li class="calories-list__item">
-        <span class="calories-list__span first">8,2g</span
-        ><span class="calories-list__span second">Fats</span>
+        <span class="calories-list__span first">8,2g</span>
+        <span class="calories-list__span second">Fats</span>
       </li>
       <li class="calories-list__item">
-        <span class="calories-list__span first">40,4g</span
-        ><span class="calories-list__span second">Carbs</span>
+        <span class="calories-list__span first">40,4g</span>
+        <span class="calories-list__span second">Carbs</span>
       </li>
     </ul>
     <p class="list-title">Ingredients</p>
     <ul class="ingredients-list">
       <li class="ingredients-list__item">
-        <span class="ingredients-list__span">Milk</span
-        ><span class="ingredients-list__span">100ml</span>
+        <span class="ingredients-list__span">Milk</span>
+        <span class="ingredients-list__span">100ml</span>
       </li>
       <li class="ingredients-list__item">
-        <span class="ingredients-list__span">Belgian chocolate</span
-        ><span class="ingredients-list__span">20g</span>
+        <span class="ingredients-list__span">Belgian chocolate</span>
+        <span class="ingredients-list__span">20g</span>
       </li>
       <li class="ingredients-list__item">
-        <span class="ingredients-list__span">Cream</span
-        ><span class="ingredients-list__span">150 ml</span>
+        <span class="ingredients-list__span">Cream</span>
+        <span class="ingredients-list__span">150 ml</span>
       </li>
       <li class="ingredients-list__item">
-        <span class="ingredients-list__span">Cocoa powder</span
-        ><span class="ingredients-list__span">30g</span>
+        <span class="ingredients-list__span">Cocoa powder</span>
+        <span class="ingredients-list__span">30g</span>
       </li>
       <li class="ingredients-list__item">
-        <span class="ingredients-list__span">Sugar</span
-        ><span class="ingredients-list__span">40g</span>
+        <span class="ingredients-list__span">Sugar</span>
+        <span class="ingredients-list__span">40g</span>
       </li>
       <li class="ingredients-list__item">
-        <span class="ingredients-list__span">Vanilla sugar</span
-        ><span class="ingredients-list__span">10g</span>
+        <span class="ingredients-list__span">Vanilla sugar</span>
+        <span class="ingredients-list__span">10g</span>
       </li>
     </ul>
     <form class="modal-form">
