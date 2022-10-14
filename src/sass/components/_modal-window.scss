@@ -1,3 +1,13 @@
+.modal-products-size {
+  width: 280px;
+  height: 990px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 995px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .modal-products {
     position: absolute;
