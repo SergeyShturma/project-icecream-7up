@@ -15,7 +15,39 @@
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
+.contact-btn {
+  width: 196px;
+  padding: 12px 0;
+  border-radius: 10px;
+  background-color: #f8d24e;
+  margin: 0;
 
+  &:hover {
+    background-color: #0A8817;
+    cursor: pointer;
+  }
+    &:focus{
+      color: #FFFFFF;
+    }
+}
+.contact-btn-fran {
+  width: 196px;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background-color: #84a178;
+  margin: 0;
+
+  &:hover {
+    border: 2px solid #0A8817;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border: 2px solid #0A8817;
+    color: #FFFFFF;
+  }
+}
 @media screen and (max-width: 767px) {
   .contact-card:first-child {
     margin-top: -345px;
@@ -96,13 +128,12 @@
 .contact-btn {
   width: 196px;
   padding: 12px 0;
-  border: 2px solid #f8d24e;
   border-radius: 10px;
-  background-color: transparent;
+  background-color: #f8d24e;
   margin: 0;
   &:hover,
   &:focus {
-    background-color: #f8d24e;
+    background-color: #0A8817;
     cursor: pointer;
   }
 }
