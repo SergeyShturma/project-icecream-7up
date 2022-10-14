@@ -1,56 +1,73 @@
-<div class="modal" data-modal="4">
-    <div class="modal-contacts-franchise">
-      <button class="modal-contacts-franchise__btn js-modal-close" type="button" data-modal-close>
-        <svg lang="en" aria-label="close icon" class="modal-contacts-franchise__btn-icon">
-          <use href="/src/images/sprite.svg#icon-close"></use>
-        </svg>
+<div class="modal modal-contacts-franchise-size" data-modal="4">
+  <div class="modal-contacts-franchise">
+    <button
+      class="modal-contacts-franchise__btn js-modal-close"
+      type="button"
+      data-modal-close
+    >
+      <svg
+        lang="en"
+        aria-label="close icon"
+        class="modal-contacts-franchise__btn-icon"
+      >
+        <use href="/src/images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="form-contacts-franchise">
+      <strong class="form-contacts-franchise__title"
+        >Thank you for your interest in owning an Ice Cream shop</strong
+      >
+      <p class="form-contacts-franchise__text">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <div class="form-contacts-franchise__field val-name">
+        <input
+          type="text"
+          class="form-contacts-franchise__input req"
+          name="user-name"
+          autocomplete="name"
+          pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+"
+          placeholder="Name"
+          required
+        />
+      </div>
+      <div class="form-contacts-franchise__field val-tel">
+        <input
+          type="tel"
+          class="form-contacts-franchise__input req"
+          name="user-tel"
+          autocomplete="tel"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+          title="xxx-xxx-xx-xx"
+          placeholder="Phone"
+          required
+        />
+      </div>
+      <div class="form-contacts-franchise__field val-email">
+        <input
+          type="email"
+          class="form-contacts-franchise__input req"
+          name="user-email"
+          autocomplete="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          placeholder="Email"
+          required
+        />
+      </div>
+      <div class="form-contacts-franchise__field">
+        <textarea
+          class="form-contacts-franchise__comment"
+          name="user-comment"
+          placeholder="Comment"
+        ></textarea>
+      </div>
+      <button class="form-contacts-franchise__btn-submit" type="submit">
+        Submit
       </button>
-      <form class="form-contacts-franchise">
-        <strong class="form-contacts-franchise__title">Thank you for your interest in owning an Ice Cream shop</strong>
-        <p class="form-contacts-franchise__text">Due to the overwhelming volume of franchise requests we are not accepting new franchisee applications at this time. Once the application process resumes, we will contact you for further information. Please fill out the contact information below and we will reach out for additional information. We appreciate your patience.</p>
-        <div class="form-contacts-franchise__field val-name">
-          <input
-            type="text"
-            class="form-contacts-franchise__input req"
-            name="user-name"
-            autocomplete="name"
-            pattern="[a-zA-Zа-яА-ЯіІїЇ`ʼ]+"
-            placeholder="Name"
-            required
-          />
-        </div>
-        <div class="form-contacts-franchise__field val-tel">
-          <input
-            type="tel"
-            class="form-contacts-franchise__input req"
-            name="user-tel"
-            autocomplete="tel"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
-            title="xxx-xxx-xx-xx"
-            placeholder="Phone"
-            required
-          />
-        </div>
-        <div class="form-contacts-franchise__field val-email">
-            <input
-              type="email"
-              class="form-contacts-franchise__input req"
-              name="user-email"
-              autocomplete="email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              placeholder="Email"
-              required
-            />
-          </div>
-        <div class="form-contacts-franchise__field">
-          <textarea
-            class="form-contacts-franchise__comment"
-            name="user-comment"
-            placeholder="Comment"
-          ></textarea>
-        </div>
-        <button class="form-contacts-franchise__btn-submit" type="submit">Submit</button>
-      </form>
-    </div>
+    </form>
   </div>
-  
+</div>

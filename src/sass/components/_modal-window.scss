@@ -1,3 +1,13 @@
+.modal-products-size {
+  width: 280px;
+  height: 990px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 995px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .modal-products {
     position: absolute;
@@ -161,7 +171,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 568px;
-    height: auto;
+    height: 995px;
     padding: 32px 40px;
     //overflow-y: scroll;
     background-color: var(--main-font-ligthcolor);
