@@ -1,17 +1,17 @@
 @media screen and (max-width: 767px) {
-  // .modal-products {
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-  //   width: 280px;
-  //   height: auto;
-  //   padding: 28px 20px 32px;
-  //   overflow-y: scroll;
-  //   background-color: var(--main-font-ligthcolor);
-  //   border: 2px solid var(--modal-button-color);
-  //   border-radius: 10px;
-  // }
+   .modal-products {
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: #FCFCFC;
+    border: 2px solid #F8D24E;
+    border-radius: 10px;
+   }
+
 
   .modal-close-icon {
     width: 20px;
@@ -153,18 +153,18 @@
 // ===============================================tablet-and-desktop======================================
 
 @media screen and (min-width: 768px) {
-  .modal-products {
+  //.modal-products {
     //   top: 50%;
     //   left: 50%;
     //   transform: translate(-50%, -50%);
     //   width: 568px;
     //   height: auto;
     //   padding: 32px 40px;
-    overflow-y: scroll;
+    //overflow-y: scroll;
     //   background-color: var(--main-font-ligthcolor);
     //   border: 2px solid var(--modal-button-color);
     //   border-radius: 10px;
-  }
+  //}
 
   .modal-close-button {
     position: absolute;
@@ -309,4 +309,5 @@
   border-color: transparent;
   background-color: transparent;
   transition: color var(--transition-duration-and-timing-function);
-}
+} 
+    
