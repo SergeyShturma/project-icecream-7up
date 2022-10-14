@@ -52,7 +52,7 @@
         font-weight: 600;
         line-height: 1.21;
         padding: 12px 34px;
-        transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+        transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
         &:hover {
             background-color: #0A8817;
         }
@@ -101,6 +101,7 @@
     transition: color var(--transition-duration-and-timing-function);
     &:hover,
     &:focus {
+        transition: color var(--transition-duration-and-timing-function);
         color: #F8D24E;
     }
    }
@@ -116,7 +117,7 @@
         font-weight: 600;
         line-height: 1.21;
         padding: 12px 34px;
-        transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+        transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
         &:hover {
             background-color: #0A8817;
         }

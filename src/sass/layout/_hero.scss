@@ -137,7 +137,7 @@
       line-height: 1.25;
       color: #131313;
       margin: 0;
-      transition: border-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+      transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -266,7 +266,7 @@
       line-height: 1.25;
       color: #131313;
       margin: 0;
-      transition: border-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
+      transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function), border-color var(--transition-duration-and-timing-function);
       &:focus {
         border-color: #0A8817;
         color: #fcfcfc;
@@ -283,6 +283,8 @@
       display: block;
       background-color: transparent;
       text-decoration: underline;
+      align-items: center;
+      text-align: center;
       border: none;
       color: #F8D24E;
       font-family: 'Montserrat', sans-serif;
@@ -292,7 +294,7 @@
       font-weight: 600;
       line-height: 1.21;
       margin: 0;
-      transition: var(--transition-duration-and-timing-function);
+      transition: color var(--transition-duration-and-timing-function);
      &:focus {
       color:#fcfcfc;
      }
