@@ -15,7 +15,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 280px;
-    height: 990px;
+    height: auto;
     padding: 28px 20px 32px 20px;
     // display: flex;
     // justify-content: center;
@@ -171,7 +171,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 568px;
-    height: 995px;
+    height: auto;
     padding: 32px 40px;
     //overflow-y: scroll;
     background-color: var(--main-font-ligthcolor);

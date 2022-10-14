@@ -19,7 +19,7 @@
 
   @media screen and (max-width: 767px) {
     width: 280px;
-    height: 986px;
+    // height: 986px;
   }
 
   @media screen and (max-width: 480px) {
@@ -28,7 +28,7 @@
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    height: 644px;
+    // height: 644px;
   }
 
   &__btn {
@@ -62,6 +62,10 @@
 
 .form-buy-now {
   padding: 28px;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px;
+  }
 
   &__title {
     display: block;

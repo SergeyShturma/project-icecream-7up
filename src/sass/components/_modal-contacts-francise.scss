@@ -19,7 +19,7 @@
 
   @media screen and (max-width: 767px) {
     width: 280px;
-    height: 674px;
+    height: auto;
   }
 
   @media screen and (max-width: 480px) {
@@ -28,7 +28,7 @@
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    height: 668px;
+    height: auto;
   }
 
   &__btn {
