@@ -100,7 +100,7 @@ button {
     font-weight: 600;
     line-height: 1.21;
     padding: 12px 34px;
-    transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+    transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
   }
   .buy-button:hover {
     background-color: #0A8817;
@@ -147,6 +147,7 @@ button {
     transition: color var(--transition-duration-and-timing-function);
   }
   .menu__link:hover, .menu__link:focus {
+    transition: color var(--transition-duration-and-timing-function);
     color: #F8D24E;
   }
   .buy-button {
@@ -161,7 +162,7 @@ button {
     font-weight: 600;
     line-height: 1.21;
     padding: 12px 34px;
-    transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+    transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
   }
   .buy-button:hover {
     background-color: #0A8817;
@@ -204,6 +205,7 @@ button {
     display: flex;
     gap: 8px;
     margin-top: 32px;
+    align-items: center;
     position: relative;
     z-index: 3;
   }
@@ -222,7 +224,7 @@ button {
     color: #131313;
     margin: 0;
     box-shadow: 0px, 4px rgba(0, 0, 0, 0.25);
-    transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+    transition: border-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
   }
   .hero__btn--products:focus {
     border-color: #0A8817;
@@ -233,7 +235,7 @@ button {
   }
   .hero__btn--made {
     display: block;
-    padding: 5px 7px;
+    padding: 5px 5px;
     background-color: transparent;
     text-decoration: underline;
     border: none;
@@ -310,7 +312,7 @@ button {
     line-height: 1.25;
     color: #131313;
     margin: 0;
-    transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+    transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function);
   }
   .hero__btn--products:focus {
     border-color: #0A8817;
@@ -320,7 +322,7 @@ button {
     border-color: #ABABAB;
   }
   .hero__btn--made {
-    padding: 6px 7px;
+    padding: 6px 4px;
     display: block;
     background-color: transparent;
     text-decoration: underline;
@@ -379,7 +381,7 @@ button {
   .hero__info {
     display: block;
     position: absolute;
-    right: 32px;
+    right: 16px;
     bottom: 210px;
   }
   .hero__info--top {
@@ -422,7 +424,7 @@ button {
     z-index: 3;
   }
   .hero__btn--products {
-    padding: 12px 34px;
+    padding: 12px 28px;
     display: block;
     background-color: transparent;
     border-radius: 8px;
@@ -435,7 +437,7 @@ button {
     line-height: 1.25;
     color: #131313;
     margin: 0;
-    transition: background-color var(--transition-duration-and-timing-function), coior var(--transition-duration-and-timing-function);
+    transition: background-color var(--transition-duration-and-timing-function), color var(--transition-duration-and-timing-function), border-color var(--transition-duration-and-timing-function);
   }
   .hero__btn--products:focus {
     border-color: #0A8817;
@@ -448,10 +450,12 @@ button {
     border-color: #ABABAB;
   }
   .hero__btn--made {
-    padding: 12px 21px;
+    padding: 12px 15px;
     display: block;
     background-color: transparent;
     text-decoration: underline;
+    align-items: center;
+    text-align: center;
     border: none;
     color: #F8D24E;
     font-family: "Montserrat", sans-serif;
@@ -461,7 +465,7 @@ button {
     font-weight: 600;
     line-height: 1.21;
     margin: 0;
-    transition: var(--transition-duration-and-timing-function);
+    transition: color var(--transition-duration-and-timing-function);
   }
   .hero__btn--made:focus {
     color: #fcfcfc;
@@ -477,7 +481,7 @@ button {
     flex-direction: column;
     gap: 32px;
     margin-top: 111px;
-    margin-left: 247px;
+    margin-left: 240px;
   }
   .hero__subtittle {
     width: 200px;
@@ -494,17 +498,17 @@ button {
     display: block;
     position: absolute;
     left: 15px;
-    bottom: -22px;
+    bottom: -8px;
   }
   .hero__ice-cream {
     position: absolute;
-    bottom: -188px;
+    bottom: -168px;
     left: 560px;
     z-index: 2;
   }
   .hero__points {
     position: absolute;
-    bottom: -88px;
+    bottom: -68px;
     left: -10px;
     z-index: 1;
   }
@@ -1535,10 +1539,6 @@ button {
   transform: translate(-50%, -50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
   /*  Побочные стили   */
-  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  padding: 30px;
-  border-radius: 3px;
   background-color: #fff;
   transition: 0.3s all;
 }
@@ -2299,6 +2299,38 @@ button {
   border-radius: 24px;
 }
 
+.contact-btn {
+  width: 196px;
+  padding: 12px 0;
+  border-radius: 10px;
+  background-color: #f8d24e;
+  margin: 0;
+}
+.contact-btn:hover {
+  background-color: #0A8817;
+  cursor: pointer;
+}
+.contact-btn:focus {
+  color: #FFFFFF;
+}
+
+.contact-btn-fran {
+  width: 196px;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background-color: #84a178;
+  margin: 0;
+}
+.contact-btn-fran:hover {
+  border: 2px solid #0A8817;
+  cursor: pointer;
+}
+.contact-btn-fran:focus {
+  border: 2px solid #0A8817;
+  color: #FFFFFF;
+}
+
 @media screen and (max-width: 767px) {
   .contact-card:first-child {
     margin-top: -345px;
@@ -2387,13 +2419,12 @@ button {
 .contact-btn {
   width: 196px;
   padding: 12px 0;
-  border: 2px solid #f8d24e;
   border-radius: 10px;
-  background-color: transparent;
+  background-color: #f8d24e;
   margin: 0;
 }
 .contact-btn:hover, .contact-btn:focus {
-  background-color: #f8d24e;
+  background-color: #0A8817;
   cursor: pointer;
 }
 
@@ -2788,6 +2819,7 @@ button {
   font-family: "Seymour One";
   font-size: 16px;
   line-height: 1.5;
+  text-align: center;
   width: 100%;
   color: #131313;
 }
@@ -2810,6 +2842,8 @@ button {
   width: 224px;
   height: 199px;
   margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 10px;
   margin-top: 20px;
 }
@@ -3001,16 +3035,16 @@ button {
 }
 
 @media screen and (max-width: 767px) {
-  .modal {
+  .modal-products {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 280px;
-    height: auto;
-    padding: 28px 20px 32px;
-    background-color: var(--main-font-ligthcolor);
-    border: 2px solid var(--modal-button-color);
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FCFCFC;
+    border: 2px solid #F8D24E;
     border-radius: 10px;
   }
   .modal-close-icon {
@@ -3124,21 +3158,6 @@ button {
   }
 }
 @media screen and (min-width: 768px) {
-  .modal {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 568px;
-    height: auto;
-    padding: 32px 40px;
-    background-color: var(--main-font-ligthcolor);
-    border: 2px solid var(--modal-button-color);
-    border-radius: 10px;
-  }
-  .modal-close-icon {
-    width: 20px;
-    height: 20px;
-  }
   .modal-close-button {
     position: absolute;
     top: 20px;
@@ -3155,7 +3174,7 @@ button {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .modal-title {
-    font-family: "Seymour One";
+    font-family: "Seymour One", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
