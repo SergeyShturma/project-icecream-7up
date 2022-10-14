@@ -30,6 +30,24 @@
       color: #FFFFFF;
     }
 }
+.contact-btn-fran {
+  width: 196px;
+  padding: 12px 0;
+  border-radius: 10px;
+  border: 2px solid #F8D24E;
+  background-color: #84a178;
+  margin: 0;
+
+  &:hover {
+    border: 2px solid #0A8817;
+    cursor: pointer;
+  }
+
+  &:focus {
+    border: 2px solid #0A8817;
+    color: #FFFFFF;
+  }
+}
 @media screen and (max-width: 767px) {
   .contact-card:first-child {
     margin-top: -345px;
