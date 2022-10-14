@@ -40,8 +40,27 @@
   // text-align: center;
   // padding: 30px;
   // border-radius: 3px;
-  background-color: #fff;
-  transition: 0.3s all;
+  // background-color: #fff;
+  // transition: 0.3s all;
+  opacity: 0;
+  visibility: hidden;
+  max-width: 100%;
+  max-height: 100%;
+  z-index: 9999;
+  text-align: center;
+  overflow-y: auto;
+ 
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 26px;
+  transition: all 0.3s;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 10px -0.5px rgb(0 0 0 / 20%);
 }
 
 /* Стили для активных классов подложки и окна */
