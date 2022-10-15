@@ -1,25 +1,17 @@
-.modal-buy-now-size {
-  width: 280px;
-  height: 986px;
-
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    height: 644px;
-  }
-}
-
 .modal-buy-now {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 280px;
+  height: 986px;
   background: #fcfcfc;
   border-radius: 10px;
   border: 2px solid #f8d24e;
 
   @media screen and (max-width: 767px) {
-    width: 280px;
-    // height: 986px;
+    top: 30px;
+    transform: translateX(-50%);
   }
 
   @media screen and (max-width: 480px) {
@@ -28,7 +20,7 @@
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    // height: 644px;
+    height: 724px;
   }
 
   &__btn {
