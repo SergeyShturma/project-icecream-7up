@@ -1,18 +1,10 @@
-.modal-contacts-franchise-size {
-  width: 280px;
-  height: 674px;
-
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    height: 668px;
-  }
-}
-
 .modal-contacts-franchise {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 568px;
+  height: 679px;
   background: #fcfcfc;
   border-radius: 10px;
   border: 2px solid #f8d24e;
@@ -24,11 +16,6 @@
 
   @media screen and (max-width: 480px) {
     width: 100%;
-  }
-
-  @media screen and (min-width: 768px) {
-    width: 568px;
-    height: auto;
   }
 
   &__btn {
@@ -61,8 +48,6 @@
 }
 
 .form-contacts-franchise {
-  padding: 29px;
-
   &__title {
     display: flex;
     align-items: center;
