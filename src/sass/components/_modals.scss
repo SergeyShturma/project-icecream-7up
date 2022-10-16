@@ -50,6 +50,7 @@
   text-align: center;
   overflow-y: auto;
   overflow-x: hidden;
+
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
@@ -61,6 +62,10 @@
 
   transform: translate(-50%, -50%);
   box-shadow: 0 3px 10px -0.5px rgb(0 0 0 / 20%);
+}
+
+.modal::-webkit-scrollbar {
+  width: 0;
 }
 
 /* Стили для активных классов подложки и окна */
